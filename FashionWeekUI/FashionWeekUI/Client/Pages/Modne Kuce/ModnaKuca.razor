@@ -1,0 +1,157 @@
+﻿@page "/ModnaKuca"
+
+@using System.Net.Http.Json
+@inject NavigationManager manager;
+@inject HttpClient Http
+@inject ISnackbar Snackbar
+@using System.Text.Json
+@using static MudBlazor.CategoryTypes
+
+
+<MudContainer Height="100%" Width="100%">
+    <MudSimpleTable Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+        <thead>
+            <tr>
+                <th>Naziv</th>
+                <th>Ime Osnivaca</th>
+                <th>Prezime Osnivaca</th>
+                <th>Država</th>
+                <th>Grad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (modneKuce == null)
+            {
+                <tr>
+                    <td colspan="5">Loading...</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var kuca in modneKuce)
+                {
+                    <tr>
+                        <td>@kuca.Naziv</td>
+                        <td>@kuca.ImeOsnivaca</td>
+                        <td>@kuca.PrezimeOsnivaca</td>
+                        <td>@kuca.Drzava</td>
+                        <td>@kuca.Grad</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectModnaKuca(kuca.Naziv)">
+                                Izaberi
+                            </MudButton>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </MudSimpleTable>
+    <div class="d-flex gap-2 mt-2">
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="@DodajModnuKucu">DODAJ MODNU KUĆU</MudButton>
+    </div>
+    <div class="d-flex gap-2 mt-2">
+
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => IzmeniModnuKucu(noviNaziv)" Color="Color.Info" Size="Size.Small">IZMENI MODNU KUĆU</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="@ObrisiModnuKucu" Color="Color.Error">OBRISI MODNU KUĆU</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="@PrikaziVlasnike" Color="Color.Error">PRIKAZI IMENA VLASNIKA</MudButton>
+    </div>
+
+
+
+
+
+
+</MudContainer>
+
+@code {
+    private string nazivModneKuce;
+    private List<ModnaKucaModel>? modneKuce;
+
+    public string noviNaziv = "";
+
+    public string message = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        modneKuce = await Http.GetFromJsonAsync<List<ModnaKucaModel>>("https://localhost:7234/ModnaKuca/PreuzmiModneKuce");
+    }
+    private void SelectModnaKuca(string naziv)
+    {
+
+        noviNaziv = naziv;
+        Snackbar.Add("Izabrali ste modnu kucu sa nazivom: " + noviNaziv, Severity.Success);
+    }
+
+
+    public void DodajModnuKucu()
+    {
+        manager.NavigateTo("/DodajModnuKucu");
+    }
+
+    public void IzmeniModnuKucu(string nazivKuce)
+    {
+        manager.NavigateTo($"/IzmeniModnuKucu{nazivKuce}");
+    }
+
+    async Task ObrisiModnuKucu()
+    {
+        if (string.IsNullOrWhiteSpace(noviNaziv))
+        {
+            Snackbar.Add("Unesite naziv modne kuće", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7234/ModnaKuca/ObrisiModnuKucu/{noviNaziv}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            modneKuce = await Http.GetFromJsonAsync<List<ModnaKucaModel>>("https://localhost:7234/ModnaKuca/PreuzmiModneKuce");
+            Snackbar.Add("Modna kuća je obrisana!", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo brisanje modne kuće", Severity.Error);
+        }
+    }
+
+    [Inject] private IDialogService DialogService { get; set; }
+    string state = "Message box hasn't been opened yet";
+
+    async Task PrikaziVlasnike()
+    {
+        if (string.IsNullOrWhiteSpace(noviNaziv))
+        {
+            Snackbar.Add("Unesite naziv modne kuće", Severity.Error);
+            return;
+        }
+
+        try
+        {
+            HttpResponseMessage response = await Http.GetAsync($"https://localhost:7234/ModnaKuca/PreuzmiImenaVlasnikaModneKuce/{noviNaziv}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                // Dobijanje odgovora u JSON formatu
+                string jsonResult = await response.Content.ReadAsStringAsync();
+                // Prikazivanje naziva zemalja u messageboxu
+                string[] vlasnici = JsonSerializer.Deserialize<string[]>(jsonResult);
+                string message = string.Join("\n", vlasnici);
+                await DialogService.ShowMessageBox("Vlasnici", message);
+                
+            }
+            else
+            {
+                Snackbar.Add("Neuspelo prikazivanje vlasnika", Severity.Error);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception: {ex.Message}");
+            Snackbar.Add("Došlo je do greške prilikom prikazivanja vlasnika.", Severity.Error);
+        }
+    }
+
+
+
+}

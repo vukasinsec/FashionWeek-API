@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FashionWeek.Host", "FashionWeekUI\Server\FashionWeek.Host.csproj", "{CCED097F-8688-4827-AC5C-279F02DD0CFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FashionWeek.Client", "FashionWeekUI\Client\FashionWeek.Client.csproj", "{7B5EB9DB-E25C-4BA2-A58C-1AED0E3E14CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCED097F-8688-4827-AC5C-279F02DD0CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCED097F-8688-4827-AC5C-279F02DD0CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCED097F-8688-4827-AC5C-279F02DD0CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCED097F-8688-4827-AC5C-279F02DD0CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5EB9DB-E25C-4BA2-A58C-1AED0E3E14CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5EB9DB-E25C-4BA2-A58C-1AED0E3E14CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5EB9DB-E25C-4BA2-A58C-1AED0E3E14CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5EB9DB-E25C-4BA2-A58C-1AED0E3E14CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4C4C2F5-1402-4D45-8B12-99F312BC0FC5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,355 @@
+﻿@page "/ModnaAgencija"
+
+@using System.Net.Http.Json
+@inject NavigationManager manager;
+@inject HttpClient Http
+@inject ISnackbar Snackbar
+@using System.Text.Json
+
+<MudContainer Height="100%" Width="100%">
+    <MudSimpleTable Dense="@dense" Hover="@hover" Bordered="@bordered" Striped="@striped" Style="overflow-x: auto;">
+        <thead>
+            <tr>
+                <th>PIB</th>
+                <th>Naziv</th>
+                <th>Datum Osnivanja</th>
+                <th>Država</th>
+                <th>Grad</th>
+                <th>Internacionalna</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (modneAgencije == null)
+            {
+                <tr>
+                    <td colspan="6">Loading...</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var agencija in modneAgencije)
+                {
+                    <tr>
+                        <td>@agencija.Pib</td>
+                        <td>@agencija.Naziv</td>
+                        <td>@agencija.DatumOsnivanja.ToString("yyyy-MM-dd")</td>
+                        <td>@agencija.Drzava</td>
+                        <td>@agencija.Grad</td>
+                        <td>@(agencija.PInternacionalna == 1 ? "Da" : "Ne")</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectModnaAgencija(agencija.Pib)">
+                                Izaberi
+                            </MudButton>
+                        </td>
+                        
+                    </tr>
+                }
+            }
+        </tbody>
+    </MudSimpleTable>
+    <div class="d-flex gap-2 mt-6 mr-2">
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="@DodajAgenciju">DODAJ AGENCIJU</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => IzmeniAgenciju(noviPib)" Color="Color.Info" Size="Size.Small">IZMENI AGENCIJU</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="@ObrisiAgenciju" Color="Color.Error">OBRISI AGENCIJU</MudButton>
+       
+    </div>
+     <div class="d-flex gap-2 mt-6 mr-2">
+        
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => PrikaziNaziveZemalja()" Color="Color.Info" Size="Size.Small">Prikazi Zemlje</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => ToggleFormaDodaj()" Color="Color.Info" Size="Size.Small">Dodaj Zemlje</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="() => ToggleFormaObrisi()" Color="Color.Info" Size="Size.Small">Obrisi Zemlje</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="() => PrikaziManekene(noviPib)" Color="Color.Info" Size="Size.Small">PRIKAZI MANEKENE</MudButton>
+        
+    </div>
+  
+    @if (showFormaDodaj)
+    {
+        <div class="mt-4">
+            <MudPaper Elevation="3">
+                <MudCardContent>
+                    <h3>Unos nove zemlje</h3>
+                    <MudTextField @bind-Value="@noviPib" Label="PIB modne agencije" />
+                    <MudTextField @bind-Value="@nazivZemlje" Label="Naziv zemlje" />
+                    <MudButton Variant="Variant.Filled" OnClick="DodajZemlju" Class="mt-4" Color="Color.Primary">Dodaj</MudButton>
+                </MudCardContent>
+            </MudPaper>
+        </div>
+    }
+    @if (showFormaObrisi)
+    {
+        <div class="mt-4">
+            <MudPaper Elevation="3">
+                <MudCardContent>
+                    <h3>Brisanje zemlje</h3>
+                    <MudTextField @bind-Value="@noviPib" Label="PIB modne agencije" />
+                    <MudTextField @bind-Value="@nazivZemlje" Label="Naziv zemlje" />
+                    <MudButton Variant="Variant.Filled" OnClick="ObrisiZemlju" Class="mt-4" Color="Color.Primary">Obrisi</MudButton>
+                </MudCardContent>
+            </MudPaper>
+        </div>
+    }
+
+    @if (manekeni != null)
+    {
+        <MudSimpleTable Class="mb-12" Dense="@dense" Hover="@hover" Bordered="@bordered" Striped="@striped" Style="overflow-x: auto; margin-top: 20px;">
+            <thead>
+                <tr>
+                    <th>Mbr</th>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Pol</th>
+                    <th>Datum Rodjenja</th>
+                    <th>Zemlja Porekla</th>
+                    <th>Boja Kose</th>
+                    <th>Visina</th>
+                    <th>Tezina</th>
+                    <th>Konfekcijski Broj</th>
+                    <th>Boja Ociju</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var maneken in manekeni)
+                {
+                    <tr>
+                        <td>@maneken.Mbr</td>
+                        <td>@maneken.Ime</td>
+                        <td>@maneken.Prezime</td>
+                        <td>@maneken.Pol</td>
+                        <td>@maneken.DatumRodjenja.ToString("yyyy-MM-dd")</td>
+                        <td>@maneken.ZemljaPorekla</td>
+                        <td>@maneken.BojaKose</td>
+                        <td>@maneken.Visina</td>
+                        <td>@maneken.Tezina</td>
+                        <td>@maneken.KonfekcijskiBroj</td>
+                        <td>@maneken.BojaOciju</td>
+                    </tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    }
+    
+    
+    
+</MudContainer>
+
+
+@code {
+
+    private bool showFormaDodaj = false;
+    private bool showFormaObrisi = false;
+    private List<ManekenModel>? manekeni;
+    private void ToggleFormaDodaj()
+    {
+        showFormaDodaj = !showFormaDodaj;
+        if (showFormaDodaj) showFormaObrisi = false;
+    }
+
+    private void ToggleFormaObrisi()
+    {
+        showFormaObrisi = !showFormaObrisi;
+        if (showFormaObrisi) showFormaDodaj = false;
+    }
+
+    private string noviPib = "";
+    private string nazivZemlje = "";
+
+    private void SelectModnaAgencija(string pib)
+    {
+
+        noviPib = pib;
+        Snackbar.Add("Izabrali ste modnu agenciju sa PIB-om: " + pib, Severity.Success);
+    }
+
+    private async Task DodajZemlju()
+    {
+        if (string.IsNullOrWhiteSpace(noviPib) || string.IsNullOrWhiteSpace(nazivZemlje))
+        {
+            Snackbar.Add("Unesite PIB i naziv zemlje", Severity.Error);
+            return;
+        }
+
+        var novaZemlja = new ZemljaModel
+            {
+                Pib = noviPib,
+                NazivZemlje = nazivZemlje
+            };
+
+        //var response = await Http.PostAsJsonAsync($"https://localhost:7234/ModnaAgencija/DodajZemljeAgenciji/{noviPib}/{nazivZemlje}");
+        var url = $"https://localhost:7234/ModnaAgencija/DodajZemljeAgenciji/{noviPib}/{nazivZemlje}";
+        var response = await Http.PostAsync(url, null);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Zemlja uspešno dodata", Severity.Success);
+            showFormaDodaj = false;
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje zemlje", Severity.Error);
+        }
+    }
+
+    private async Task ObrisiZemlju()
+    {
+        if (string.IsNullOrWhiteSpace(noviPib) || string.IsNullOrWhiteSpace(nazivZemlje))
+        {
+            Snackbar.Add("Unesite PIB i naziv zemlje", Severity.Error);
+            return;
+        }
+
+        var url = $"https://localhost:7234/ModnaAgencija/ObrisiZemljuAgencije/{noviPib}/{nazivZemlje}";
+        var response = await Http.DeleteAsync(url);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Zemlja uspešno obrisana", Severity.Success);
+            showFormaObrisi = false;
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo brisanje zemlje", Severity.Error);
+        }
+    }
+
+    public class ModnaAgencijaModel
+    {
+        public string Pib { get; set; }
+        public string Naziv { get; set; }
+        public DateTime DatumOsnivanja { get; set; }
+        public string Drzava { get; set; }
+        public string Grad { get; set; }
+        public int PInternacionalna { get; set; }
+
+    }
+    
+
+    private bool dense = false;
+    private bool hover = true;
+    private bool striped = true;
+    private bool bordered = false;
+
+    private List<ModnaAgencijaModel>? modneAgencije;
+
+
+    [Inject] private IDialogService DialogService { get; set; }
+    string state = "Message box hasn't been opened yet";
+
+    protected override async Task OnInitializedAsync()
+    {
+        modneAgencije = await Http.GetFromJsonAsync<List<ModnaAgencijaModel>>("https://localhost:7234/ModnaAgencija/PreuzmiModneAgencije");
+    }
+
+    public void DodajAgenciju()
+    {
+        manager.NavigateTo("/DodajModnuAgenciju");
+    }
+    public void IzmeniAgenciju(string pib)
+    {
+        manager.NavigateTo($"/IzmeniModnuAgenciju{pib}");
+    }
+
+    async Task ObrisiAgenciju()
+    {
+        if (string.IsNullOrWhiteSpace(noviPib))
+        {
+
+            Snackbar.Add("Unesite PIB modne agencije", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7234/ModnaAgencija/ObrisiModnuAgenciju/{noviPib}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            modneAgencije = await Http.GetFromJsonAsync<List<ModnaAgencijaModel>>("https://localhost:7234/ModnaAgencija/PreuzmiModneAgencije");
+
+            Snackbar.Add("Modna agencija je obrisana!", Severity.Success);
+            manager.NavigateTo("/ModnaAgencija");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo brisanje modne agencije", Severity.Error);
+            return;
+        }
+
+    }
+
+    private async Task PrikaziNaziveZemalja()
+    {
+        if (string.IsNullOrWhiteSpace(noviPib))
+        {
+            state = "Unesite PIB modne agencije";
+            return;
+        }
+
+        // Poziv API funkcije na serveru da dobijete nazive zemalja
+        HttpResponseMessage response = await Http.GetAsync($"https://localhost:7234/ModnaAgencija/PrikaziZemljeModneAgencije/{noviPib}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Dobijanje odgovora u JSON formatu
+            string jsonResult = await response.Content.ReadAsStringAsync();
+            // Prikazivanje naziva zemalja u messageboxu
+            string[] naziviZemalja = JsonSerializer.Deserialize<string[]>(jsonResult);
+            string message = string.Join("\n", naziviZemalja);
+            await DialogService.ShowMessageBox("Nazivi Zemalja", message);
+
+        }
+        else
+        {
+            state = "Neuspelo dobavljanje naziva zemalja";
+        }
+    }
+
+    async Task DodajZemljeAgenciji()
+	{
+		if (string.IsNullOrWhiteSpace(noviPib))
+		{
+			state = "Unesite PIB modne agencije";
+			return;
+		}
+		HttpResponseMessage response = await Http.PostAsync($"https://localhost:7234/ModnaAgencija/DodajZemljeModnojAgenciji/{noviPib}", null);
+
+		if (response.IsSuccessStatusCode)
+		{
+			state = "Zemlje su dodate agenciji";
+		}
+		else
+		{
+			state = "Neuspelo dodavanje zemalja agenciji";
+		}
+	}
+
+    private async Task PrikaziManekene(string pib)
+    {
+
+        if (string.IsNullOrWhiteSpace(noviPib))
+        {
+            state = "Unesite PIB modne agencije";
+            return;
+        }
+
+        HttpResponseMessage response = await Http.GetAsync($"https://localhost:7234/Maneken/PreuzmiManekeneModneAgencije/{pib}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            string responseString = await response.Content.ReadAsStringAsync();
+            manekeni = JsonSerializer.Deserialize<List<ManekenModel>>(responseString, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+
+            if (manekeni == null || manekeni.Count == 0)
+            {
+                Snackbar.Add("Nema manekena za ovu modnu agenciju", Severity.Info);
+            }
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dobavljanje manekena", Severity.Error);
+        }
+    }
+
+
+
+}

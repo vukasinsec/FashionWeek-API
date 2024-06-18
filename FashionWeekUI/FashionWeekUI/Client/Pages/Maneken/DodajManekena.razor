@@ -1,0 +1,173 @@
+﻿@page "/DodajManekena"
+
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<MudContainer>
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Ime" Label="Ime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Prezime" Label="Prezime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField MaxLength="13" @bind-Value="MBR" Label="MBR" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Pol" Label="Pol" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="DatumRodjenja" Label="Datum Rodjenja" Variant="Variant.Text" Type="date"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ZemljaPorekla" Label="Zemlja Porekla" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="BojaKose" Label="Boja Kose" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="BojaOciju" Label="Boja Očiju" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Visina" Label="Visina" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Tezina" Label="Težina" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudContainer MaxWidth="MaxWidth.Small">
+                <MudSelect Margin="Margin.Normal" T="string" Label="Konfekcijski Broj" Variant="Variant.Text" @bind-Value="SelectedSize">
+                    @foreach (var size in Sizes)
+                    {
+                        <MudSelectItem Value="@size">@size</MudSelectItem>
+                    }
+                </MudSelect>
+            </MudContainer>
+        </MudItem>
+    </MudGrid>
+    <MudButton Class="mt-7" Variant="Variant.Filled" Color="Color.Primary" OnClick="DodajManekenaBtn" FullWidth="true">DODAJ MANEKENA</MudButton>
+    <MudButton Variant="Variant.Filled" Class="mt-4" StartIcon="@Icons.Material.Filled.Visibility" OnClick="() => ToggleAgencijaFields()" Color="Color.Info" Size="Size.Small">Prikazi Agencije</MudButton>
+
+    @if (showAgencijaFields)
+    {
+        <MudSimpleTable Class="mt-8" Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    <th>PIB</th>
+                    <th>Naziv</th>
+                    <th>Datum Osnivanja</th>
+                    <th>Država</th>
+                    <th>Grad</th>
+                    <th>Internacionalna</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var agencija in modneAgencije)
+                {
+                    <tr>
+                        <td>@agencija.PIB</td>
+                        <td>@agencija.Naziv</td>
+                        <td>@agencija.DatumOsnivanja</td>
+                        <td>@agencija.Drzava</td>
+                        <td>@agencija.Grad</td>
+                        <td>@(agencija.PInternacionalna == 1 ? "Da" : "Ne")</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => PoveziAgencijuIManekena(agencija.PIB)">
+                                DODAJ MANEKENA SA MODNOM AGENCIJOM
+                            </MudButton>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    }
+
+</MudContainer>
+
+@code {
+    public string Ime { get; set; }
+    public string Prezime { get; set; }
+    public string MBR { get; set; }
+    public string Pol { get; set; }
+    public DateTime DatumRodjenja { get; set; }
+    public string ZemljaPorekla { get; set; }
+    public string BojaKose { get; set; }
+    public string BojaOciju { get; set; }
+    public int Visina { get; set; }
+    public int Tezina { get; set; }
+    public string SelectedSize { get; set; }
+    private List<ModnaAgencijaModel>? modneAgencije;
+    private bool showAgencijaFields = false;
+    private void ToggleAgencijaFields()
+    {
+        showAgencijaFields = !showAgencijaFields;
+    }
+
+    protected override async Task OnInitializedAsync()
+	{
+        modneAgencije = await Http.GetFromJsonAsync<List<ModnaAgencijaModel>>("https://localhost:7234/ModnaAgencija/PreuzmiModneAgencije");
+	}
+
+    private List<string> Sizes = new List<string> { "S", "M", "L", "XL"};
+
+    public async Task DodajManekenaBtn()
+    {
+        var maneken = new ManekenModel
+            {
+                Ime = Ime,
+                Prezime = Prezime,
+                Mbr = MBR,
+                Pol = Pol,
+                DatumRodjenja = DatumRodjenja,
+                ZemljaPorekla = ZemljaPorekla,
+                BojaKose = BojaKose,
+                BojaOciju = BojaOciju,
+                Visina = Visina,
+                Tezina = Tezina,
+                KonfekcijskiBroj = SelectedSize
+            };
+
+        var response = await Http.PostAsJsonAsync("https://localhost:7234/Maneken/DodajManekena", maneken);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Maneken je dodat!", Severity.Success);
+            Navigation.NavigateTo("/Maneken");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje manekena", Severity.Error);
+        }
+    }
+
+    async Task PoveziAgencijuIManekena(string pib)
+    {
+        var maneken = new ManekenModel
+            {
+                Ime = Ime,
+                Prezime = Prezime,
+                Mbr = MBR,
+                Pol = Pol,
+                DatumRodjenja = DatumRodjenja,
+                ZemljaPorekla = ZemljaPorekla,
+                BojaKose = BojaKose,
+                BojaOciju = BojaOciju,
+                Visina = Visina,
+                Tezina = Tezina,
+                KonfekcijskiBroj = SelectedSize
+            };
+
+        var response = await Http.PostAsJsonAsync($"https://localhost:7234/Maneken/KreirajManekena/{pib}", maneken);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Dodat je maneken sa modnom agencijom!", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje agencije", Severity.Error);
+        }
+    }
+}

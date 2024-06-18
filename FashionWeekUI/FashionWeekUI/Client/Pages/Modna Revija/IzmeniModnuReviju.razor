@@ -1,0 +1,75 @@
+﻿@page "/IzmeniModnuReviju{id:int}"
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+<MudContainer>
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudField Label="Outlined" Variant="Variant.Outlined">@Id</MudField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Naziv" Label="Naziv" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Grad" Label="Grad" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="DatumOdrzavanja" Label="Datum Održavanja" Variant="Variant.Text" Type="date"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="VremeOdrzavanja" Label="Vreme Održavanja" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ImeJavneLicnosti" Label="Ime Javne Ličnosti" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="prezimeJavneLicnosti" Label="Prezime Javne Ličnosti" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ZanimanjeJL" Label="Zanimanje Javne Ličnosti" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => IzmeniReviju()" FullWidth="true">IZMENI MODNU REVIJU</MudButton>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    // Svojstva za svaki MudTextField
+    public string Naziv { get; set; }
+    public string Grad { get; set; }
+    public DateTime DatumOdrzavanja {get;set;}
+    public string VremeOdrzavanja { get; set; }
+    public string ImeJavneLicnosti { get; set; }
+    public string prezimeJavneLicnosti { get; set; }
+    public string ZanimanjeJL { get; set; }
+
+    async Task IzmeniReviju()
+    {
+        var novaRevija = new ModnaRevijaModel
+            {
+                IdModneRevije = Id,
+                Naziv = Naziv,
+                Grad = Grad,
+                DatumOdrzavanja = DatumOdrzavanja,
+                VremeOdrzavanja = int.Parse(VremeOdrzavanja),
+                ImeJavneLicnosti = ImeJavneLicnosti,
+                PrezimeJavneLicnosti = prezimeJavneLicnosti,
+                ZanimanjeJL = ZanimanjeJL
+            };
+
+        HttpResponseMessage response = await Http.PutAsJsonAsync($"https://localhost:7234/ModnaRevija/PromeniModnuReviju", novaRevija);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modna revija je uspešno izmenjena!", Severity.Success);
+            Navigation.NavigateTo("/ModnaRevija");
+        }
+        else
+        {
+            Snackbar.Add("Neuspela izmena modne revije", Severity.Error);
+        }
+    }
+}

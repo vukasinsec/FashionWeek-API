@@ -1,0 +1,62 @@
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.deps.json
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.AssemblyReference.cache
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfoInputs.cache
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfo.cs
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\refint\FashionWeekLibrary.dll
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Kristina\Desktop\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ref\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.deps.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\refint\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\3\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ref\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.deps.json
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.sourcelink.json
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\refint\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ref\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.deps.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\refint\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ref\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.deps.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.sourcelink.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\refint\FashionWeekLibrary.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\FashionWeekLibrary.pdb
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ref\FashionWeekLibrary.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KulinariumUI.Client.props" />
+</Project>

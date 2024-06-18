@@ -1,0 +1,79 @@
+﻿@page "/IzmeniModnuAgenciju{pib}"
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+<MudContainer>
+    <MudGrid>
+        
+        <MudItem xs="12" sm="6" md="4">
+            <MudField Label="Outlined" Variant="Variant.Outlined">@Pib</MudField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Naziv" Label="Naziv" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="DatumOsnivanja" Label="Datum Osnivanja" Variant="Variant.Text" Type="date"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Drzava" Label="Država" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Grad" Label="Grad" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudCheckBox @bind-Checked="PInternacionalna" Label="Internacionalna"></MudCheckBox>
+        </MudItem>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => IzmeniAgenciju()" FullWidth="true">IZMENI MODNU AGENCIJU</MudButton>
+    </MudGrid>
+</MudContainer>
+
+        
+@code {
+
+    [Parameter]
+    public string Pib { get; set; }
+
+    // Svojstva za svaki MudTextField
+    public string Naziv { get; set; }
+    public string PIB { get; set; }
+    DateTime? DatumOsnivanja = DateTime.Today;
+    public string Drzava { get; set; }
+    public string Grad { get; set; }
+    public bool PInternacionalna { get; set; }
+
+
+
+    async Task IzmeniAgenciju()
+    {
+
+        var novaAgencija = new ModnaAgencijaModel
+            {
+                Naziv = Naziv,
+                PIB = Pib,
+                DatumOsnivanja = DatumOsnivanja,
+                Drzava = Drzava,
+                Grad = Grad,
+                PInternacionalna = PInternacionalna ? 1 : 0
+            };
+
+        HttpResponseMessage response = await Http.PutAsJsonAsync("https://localhost:7234/ModnaAgencija/IzmeniModnuAgenciju", novaAgencija);
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Ako je ažuriranje uspjelo, ažurirajte listu agencija
+            Navigation.NavigateTo("/ModnaAgencija");
+
+            Snackbar.Add("Modna agencija je ažurirana!", Severity.Success);
+            Navigation.NavigateTo("/ModnaAgencija");
+        }
+        else
+        {
+            // Ako ažuriranje nije uspjelo, prikažite odgovarajuću poruku korisniku
+            Snackbar.Add("Neuspelo ažuriranje modne agencije", Severity.Error);
+        }
+    }
+
+
+
+}

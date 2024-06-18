@@ -1,0 +1,225 @@
+﻿@page "/ModniKreatori"
+
+@using System.Net.Http.Json
+@inject NavigationManager manager;
+@inject HttpClient Http
+@inject ISnackbar Snackbar
+@using System.Text.Json
+@using static MudBlazor.CategoryTypes
+
+<MudContainer Height="100%" Width="100%">
+    <MudSimpleTable Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+        <thead>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Pol</th>
+                <th>Datum Rođenja</th>
+                <th>Zemlja Porekla</th>
+                <th>Cena Usluge</th>
+                <th>Akcije</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (modniKreatori == null)
+            {
+                <tr>
+                    <td colspan="7">Loading...</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var kreator in modniKreatori)
+                {
+                    <tr>
+                        <td>@kreator.Ime</td>
+                        <td>@kreator.Prezime</td>
+                        <td>@kreator.Pol</td>
+                        <td>@kreator.DatumRodjenja.ToString("yyyy-MM-dd")</td>
+                        <td>@kreator.ZemljaPorekla</td>
+                        <td>@kreator.CenaUsluge</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectModniKreator(kreator.Mbr)">
+                                Izaberi
+                            </MudButton>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </MudSimpleTable>
+    <div class="d-flex gap-2 mt-2">
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="@DodajModnogKreatora">DODAJ MODNOG KREATORA</MudButton>
+    </div>
+    <div class="d-flex gap-2 mt-2">
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => IzmeniModnogKreatora(noviMbr)" Color="Color.Info" Size="Size.Small">IZMENI MODNOG KREATORA</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="@ObrisiModnogKreatora" Color="Color.Error">OBRISI MODNOG KREATORA</MudButton>
+    </div>
+    <div class="d-flex gap-2 mt-2">
+       
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Link" OnClick="@PrikaziModneRevije" Color="Color.Primary" Size="Size.Small">Prikazi Modne Revije</MudButton>
+    </div>
+    @if (prikaziRevije)
+    {
+        <MudSimpleTable Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    <th>Id Modne Revije</th>
+                    <th>Redni Broj</th>
+                    <th>Naziv</th>
+                    <th>Grad</th>
+                    <th>Datum Održavanja</th>
+                    <th>Vreme Održavanja</th>
+                    <th>Ime Javne Ličnosti</th>
+                    <th>Prezime Javne Ličnosti</th>
+                    <th>Zanimanje JL</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (modneRevije == null)
+                {
+                    <tr>
+                        <td colspan="10">Loading...</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var revija in modneRevije)
+                    {
+                        <tr>
+                            <td>@revija.IdModneRevije</td>
+                            <td>@revija.RedniBroj</td>
+                            <td>@revija.Naziv</td>
+                            <td>@revija.Grad</td>
+                            <td>@revija.DatumOdrzavanja.ToShortDateString()</td>
+                            <td>@revija.VremeOdrzavanja.ToString()h</td>
+                            <td>@revija.ImeJavneLicnosti</td>
+                            <td>@revija.PrezimeJavneLicnosti</td>
+                            <td>@revija.ZanimanjeJL</td>
+                            <td>
+                                <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => PoveziModniKreatorModnaRevija(revija.IdModneRevije)">
+                                    Poveži
+                                </MudButton>
+                                </td>
+                                <td>
+                                <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => DodajSpecijalnogGosta(revija.IdModneRevije)">
+                                    Dodaj Specijalnog Gosta
+                                </MudButton>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </MudSimpleTable>
+    }
+</MudContainer>
+
+@code {
+    private string noviMbr;
+    private List<ModniKreatorModel>? modniKreatori;
+    private List<ModnaRevijaModel>? modneRevije;
+    private bool prikaziRevije = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        modniKreatori = await Http.GetFromJsonAsync<List<ModniKreatorModel>>("https://localhost:7234/ModniKreator/PreuzmiModneKreatore");
+    }
+
+    private void SelectModniKreator(string mbr)
+    {
+        noviMbr = mbr;
+        Snackbar.Add("Izabrali ste modnog kreatora sa MBR: " + noviMbr, Severity.Success);
+    }
+
+    public void DodajModnogKreatora()
+    {
+        manager.NavigateTo("/DodajModnogKreatora");
+    }
+
+    public void IzmeniModnogKreatora(string mbr)
+    {
+        manager.NavigateTo($"/IzmeniModnogKreatora{mbr}");
+    }
+
+    async Task ObrisiModnogKreatora()
+    {
+        if (string.IsNullOrWhiteSpace(noviMbr))
+        {
+            Snackbar.Add("Unesite MBR modnog kreatora", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7234/ModniKreator/ObrisiModnogKreatora/{noviMbr}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            modniKreatori = await Http.GetFromJsonAsync<List<ModniKreatorModel>>("https://localhost:7234/ModniKreator/PreuzmiModneKreatore");
+            Snackbar.Add("Modni kreator je obrisan!", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo brisanje modnog kreatora", Severity.Error);
+        }
+    }
+
+    private async Task PrikaziModneRevije()
+    {
+        prikaziRevije = !prikaziRevije;
+
+        if (prikaziRevije)
+        {
+            modneRevije = await Http.GetFromJsonAsync<List<ModnaRevijaModel>>("https://localhost:7234/ModnaRevija/PreuzmiModneRevije");
+        }
+    }
+
+    private async Task PoveziModniKreatorModnaRevija(int idModneRevije)
+    {
+        if (string.IsNullOrWhiteSpace(noviMbr))
+        {
+            Snackbar.Add("Izaberite modnog kreatora", Severity.Error);
+            return;
+        }
+
+      
+
+        var response = await Http.PostAsync($"https://localhost:7234/ModniKreator/PoveziModnogKreatoraSaRevijom/{noviMbr}/{idModneRevije}", null);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Uspešno povezani modni kreator i modna revija", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspešno povezivanje", Severity.Error);
+        }
+    }
+
+    
+
+
+    async Task DodajSpecijalnogGosta(int idModneRevije)
+    {
+        if (string.IsNullOrWhiteSpace(noviMbr))
+        {
+            Snackbar.Add("Izaberite modnog kreatora", Severity.Error);
+            return;
+        }
+
+        var response = await Http.PostAsync($"https://localhost:7234/SpecijalniGost/DodajSpecijalnogGosta/{idModneRevije}/{noviMbr}", null);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Uspešno povezani modni kreator i modna revija", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspešno povezivanje", Severity.Error);
+        }
+
+
+        
+    }
+
+
+}

@@ -1,0 +1,562 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\FashionWeekUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\App.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Enums\\OutcomeEnums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Shared\\NavMenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\ModnaKuca.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\DodajManekena.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\ModnaAgencija.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\Maneken.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\IzmeniModnuAgenciju.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\ModnaRevija.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajModnuAgenciju.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\DodajModnuReviju.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ManekenModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaRevijaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajZemlje.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\IzmeniModnuReviju.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\IzmeniManekena.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\IzmeniModnogKreatora.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModniKreatorModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\DodajModnogKreatora.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\DodajModnuKucu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\IzmeniModnuKucu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\ModniKreatori.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\OrganizatorModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaAgencijaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaKucaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ZemljaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Shared\\MainLayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\App.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\App.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\App.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T20:21:31.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OutcomeEnums.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Enums\\OutcomeEnums.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Enums\\OutcomeEnums.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Enums\\OutcomeEnums.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Enums\\OutcomeEnums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T20:20:28.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAgAAAAAAAAAAAASwBEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-08T10:18:58.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Program.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T09:19:29.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModnaKuca.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\ModnaKuca.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\ModnaKuca.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\ModnaKuca.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\ModnaKuca.razor",
+              "ViewState": "AQIAABAAAAAAAAAAAAASwBQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T08:26:16.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Home.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T09:39:07.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DodajManekena.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\DodajManekena.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\DodajManekena.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\DodajManekena.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\DodajManekena.razor",
+              "ViewState": "AQIAAJAAAAAAAAAAAAASwKkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T07:24:20.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-08T09:19:45.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ModnaAgencija.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\ModnaAgencija.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\ModnaAgencija.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\ModnaAgencija.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\ModnaAgencija.razor",
+              "ViewState": "AQIAADMAAAAAAAAAAAASwJYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T19:04:45.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Maneken.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\Maneken.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\Maneken.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\Maneken.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\Maneken.razor",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAArwEUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T07:19:41.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IzmeniModnuAgenciju.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\IzmeniModnuAgenciju.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\IzmeniModnuAgenciju.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\IzmeniModnuAgenciju.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\IzmeniModnuAgenciju.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T19:04:48.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModnaRevija.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\ModnaRevija.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\ModnaRevija.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\ModnaRevija.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\ModnaRevija.razor",
+              "ViewState": "AQIAAEkAAAAAAAAAAAASwGcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T12:38:37.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DodajModnuAgenciju.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajModnuAgenciju.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajModnuAgenciju.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajModnuAgenciju.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajModnuAgenciju.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T14:08:18.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Program.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Program.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:38:42.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DodajModnuReviju.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\DodajModnuReviju.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\DodajModnuReviju.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\DodajModnuReviju.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\DodajModnuReviju.razor",
+              "ViewState": "AQIAACwAAAAAAAAAAAASwEIAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T08:01:11.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ManekenModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ManekenModel.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ManekenModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ManekenModel.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ManekenModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T11:39:09.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ModnaRevijaModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaRevijaModel.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaRevijaModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaRevijaModel.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaRevijaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T07:59:35.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DodajZemlje.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajZemlje.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajZemlje.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajZemlje.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\ModnaAgencija\\DodajZemlje.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-08T11:15:21.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IzmeniModnuReviju.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\IzmeniModnuReviju.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\IzmeniModnuReviju.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\IzmeniModnuReviju.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modna Revija\\IzmeniModnuReviju.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T20:08:51.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IzmeniManekena.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\IzmeniManekena.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\IzmeniManekena.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\IzmeniManekena.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Maneken\\IzmeniManekena.razor",
+              "ViewState": "AQIAABgAAAAAAAAAAIBJwCsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T12:17:50.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IzmeniModnogKreatora.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\IzmeniModnogKreatora.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\IzmeniModnogKreatora.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\IzmeniModnogKreatora.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\IzmeniModnogKreatora.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwB8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T14:04:50.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ModniKreatorModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModniKreatorModel.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModniKreatorModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModniKreatorModel.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModniKreatorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T09:34:36.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DodajModnogKreatora.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\DodajModnogKreatora.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\DodajModnogKreatora.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\DodajModnogKreatora.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\DodajModnogKreatora.razor",
+              "ViewState": "AQIAAAIAAAAAAAAAAAASwBgAAAB/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T17:23:04.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DodajModnuKucu.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\DodajModnuKucu.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\DodajModnuKucu.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\DodajModnuKucu.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\DodajModnuKucu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwIIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T18:59:30.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\appsettings.json",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Server\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-13T18:24:17.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IzmeniModnuKucu.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\IzmeniModnuKucu.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\IzmeniModnuKucu.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\IzmeniModnuKucu.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modne Kuce\\IzmeniModnuKucu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T20:23:13.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ModniKreatori.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\ModniKreatori.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\ModniKreatori.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\ModniKreatori.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Pages\\Modni Kreator\\ModniKreatori.razor",
+              "ViewState": "AQIAALoAAAAAAAAAAAAowGYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T09:32:23.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwCMAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-08T09:19:52.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrganizatorModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\OrganizatorModel.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\OrganizatorModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\OrganizatorModel.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\OrganizatorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:10:39.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ModnaAgencijaModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaAgencijaModel.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaAgencijaModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaAgencijaModel.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaAgencijaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T10:07:03.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_Host.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Host.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T09:20:16.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ModnaKucaModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaKucaModel.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaKucaModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaKucaModel.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ModnaKucaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T07:15:38.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ZemljaModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ZemljaModel.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ZemljaModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Models\\ZemljaModel.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Models\\ZemljaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T11:24:38.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Client\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Client\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Client\\Shared\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-08T10:21:44.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_Layout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml.cs",
+              "RelativeToolTip": "..\\KulinariumUI\\KulinariumUI\\Server\\Pages\\_Layout.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T09:20:23.793Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

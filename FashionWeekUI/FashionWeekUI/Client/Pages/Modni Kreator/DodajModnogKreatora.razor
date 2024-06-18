@@ -1,0 +1,298 @@
+﻿@page "/DodajModnogKreatora"
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<MudContainer>
+    <MudGrid>
+        <!-- Form for adding a new fashion designer -->
+       
+            <MudItem xs="12" sm="6" md="4">
+                <MudTextField @bind-Value="Mbr" Label="Maticni Broj" Variant="Variant.Text"></MudTextField>
+            </MudItem>
+        
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Ime" Label="Ime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Prezime" Label="Prezime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Pol" Label="Pol" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="DatumRodjenja" Label="Datum Rodjenja" Variant="Variant.Text" Type="date"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ZemljaPorekla" Label="Zemlja Porekla" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="CenaUsluge" Label="Cena Usluge" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+
+        <!-- Show/Hide the organizer table and text field -->
+        @if (showOrganizerFields)
+        {
+            <MudItem xs="12" sm="6" md="4">
+                <MudTextField @bind-Value="OrganizatorID" Label="Organizator ID" Variant="Variant.Text" Disabled="true"></MudTextField>
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudTable Items="@organizatori" Hover="true">
+                    <HeaderContent>
+                        <MudTh>Organizator ID</MudTh>
+                        <MudTh>Kolekcija</MudTh>
+                        <MudTh>Prva Modna Revija</MudTh>
+                        <MudTh>Akcija</MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Organizator ID">@context.OrganizatorID</MudTd>
+                        <MudTd DataLabel="Kolekcija">@context.Kolekcija</MudTd>
+                        <MudTd DataLabel="Prva Modna Revija">@context.PrvaModnaRevija</MudTd>
+                        <MudTd>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectOrganizator(context.OrganizatorID)">
+                                Izaberi
+                            </MudButton>
+                        </MudTd>
+                    </RowTemplate>
+                </MudTable>
+            </MudItem>
+        }
+
+        @if (showModnaKucaFields)
+        {
+            <MudItem xs="12" sm="6" md="4">
+                <MudTextField @bind-Value="ModnaKucaNaziv" Label="Modna Kuca Naziv" Variant="Variant.Text" Disabled="true"></MudTextField>
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudTable Items="@modneKuce" Hover="true">
+                    <HeaderContent>
+                        <MudTh>Naziv</MudTh>
+                        <MudTh>Ime Osnivaca</MudTh>
+                        <MudTh>Prezime Osnivaca</MudTh>
+                        <MudTh>Država</MudTh>
+                        <MudTh>Grad</MudTh>
+                        <MudTh>Akcija</MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Naziv">@context.Naziv</MudTd>
+                        <MudTd DataLabel="Ime Osnivaca">@context.ImeOsnivaca</MudTd>
+                        <MudTd DataLabel="Prezime Osnivaca">@context.PrezimeOsnivaca</MudTd>
+                        <MudTd DataLabel="Država">@context.Drzava</MudTd>
+                        <MudTd DataLabel="Grad">@context.Grad</MudTd>
+                        <MudTd>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectModnaKuca(context.Naziv)">
+                                Izaberi
+                            </MudButton>
+                        </MudTd>
+                    </RowTemplate>
+                </MudTable>
+            </MudItem>
+        }
+
+        <MudItem xs="12" sm="6" md="4">
+            @if (!showOrganizerFields && !showModnaKucaFields)
+            {
+                <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="DodajKreatora" FullWidth="true">DODAJ MODNOG KREATORA</MudButton>
+                <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="ToggleOrganizerFields" FullWidth="true">PRIKAŽI ORGANIZATORE</MudButton>
+                <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="ToggleModnaKucaFields" FullWidth="true">PRIKAŽI MODNE KUĆE</MudButton>
+            }
+            else if (showOrganizerFields)
+            {
+                <MudContainer MaxWidth="MaxWidth.Large">
+                    <MudGrid>
+                        <!-- Dugme za dodavanje modnog kreatora sa organizatorom -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="DodajModnogKreatoraSaOrganizatoromPayload" FullWidth="true">DODAJ MODNOG KREATORA SA ORGANIZATOROM</MudButton>
+                        </MudItem>
+
+                        <!-- Dugme za povratak -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="ToggleOrganizerFields" FullWidth="true">NAZAD</MudButton>
+                        </MudItem>
+                    </MudGrid>
+                </MudContainer>
+            }
+            else if (showModnaKucaFields)
+            {
+                <MudContainer MaxWidth="MaxWidth.Large">
+                    <MudGrid>
+                        <!-- Dugme za dodavanje modnog kreatora sa modnom kucom -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="DodajModnogKreatoraSaModnomKucomPayload" FullWidth="true">DODAJ MODNOG KREATORA SA MODNOM KUCOM</MudButton>
+                        </MudItem>
+
+                        <!-- Dugme za povratak -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="ToggleModnaKucaFields" FullWidth="true">NAZAD</MudButton>
+                        </MudItem>
+                    </MudGrid>
+                </MudContainer>
+            }
+        </MudItem>
+
+    </MudGrid>
+</MudContainer>
+
+@code {
+    public string Mbr { get; set; }
+    public string Ime { get; set; }
+    public string Prezime { get; set; }
+    public string Pol { get; set; }
+    public DateTime DatumRodjenja { get; set; }
+    public string ZemljaPorekla { get; set; }
+    public int CenaUsluge { get; set; }
+    public int OrganizatorID { get; set; }
+    private bool showOrganizerFields = false;
+    public string ModnaKucaNaziv { get; set; }
+    private bool showModnaKucaFields = false;
+    private List<OrganizatorModel> organizatori;
+    private List<ModnaKucaModel>? modneKuce;
+
+    protected override async Task OnInitializedAsync()
+    {
+        organizatori = await Http.GetFromJsonAsync<List<OrganizatorModel>>("https://localhost:7234/Organizator/PreuzmiOrganizatore");
+        modneKuce = await Http.GetFromJsonAsync<List<ModnaKucaModel>>("https://localhost:7234/ModnaKuca/PreuzmiModneKuce");
+    }
+
+    private void ToggleOrganizerFields()
+    {
+        showOrganizerFields = !showOrganizerFields;
+    }
+    private void ToggleModnaKucaFields()
+    {
+        showModnaKucaFields = !showModnaKucaFields;
+    }
+    private void SelectOrganizator(int id)
+    {
+        OrganizatorID = id;
+    }
+    private void SelectModnaKuca(string naziv)
+    {
+        ModnaKucaNaziv = naziv;
+    }
+
+
+    public async Task DodajKreatora()
+    {
+        var noviKreator = new ModniKreatorModel
+            {
+                MBR = Mbr,
+                Ime = Ime,
+                Prezime = Prezime,
+                Pol = Pol,
+                DatumRodjenja = DatumRodjenja,
+                ZemljaPorekla = ZemljaPorekla,
+                CenaUsluge = CenaUsluge
+            };
+
+        var response = await Http.PostAsJsonAsync("https://localhost:7234/ModniKreator/DodajModnogKreatora", noviKreator);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modni kreator je dodat!", Severity.Success);
+            Navigation.NavigateTo("/ModniKreatori");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje modnog kreatora", Severity.Error);
+        }
+    }
+
+
+
+    public async Task DodajModnogKreatoraSaModnomKucomPayload()
+    {
+        var noviKreator = new ModniKreatorModel
+            {
+                MBR = Mbr,
+                Ime = Ime,
+                Prezime = Prezime,
+                Pol = Pol,
+                DatumRodjenja = DatumRodjenja,
+                ZemljaPorekla = ZemljaPorekla,
+                CenaUsluge = CenaUsluge
+            };
+
+       
+
+        var response = await Http.PostAsJsonAsync($"https://localhost:7234/ModniKreator/KreirajModnogkreatora/{ModnaKucaNaziv}", noviKreator);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modni kreator je dodat!", Severity.Success);
+            Navigation.NavigateTo("/ModniKreatori");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje modnog kreatora", Severity.Error);
+        }
+    }
+
+
+    public async Task DodajModnogKreatoraSaOrganizatoromPayload()
+    {
+        var noviKreator = new ModniKreatorModel
+            {
+                MBR = Mbr,
+                Ime = Ime,
+                Prezime = Prezime,
+                Pol = Pol,
+                DatumRodjenja = DatumRodjenja,
+                ZemljaPorekla = ZemljaPorekla,
+                CenaUsluge = CenaUsluge
+            };
+
+        
+
+        var response = await Http.PostAsJsonAsync($"https://localhost:7234/ModniKreator/KreirajModnogKreatoraOrg/{OrganizatorID}", noviKreator);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modni kreator je dodat!", Severity.Success);
+            Navigation.NavigateTo("/ModniKreatori");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje modnog kreatora", Severity.Error);
+        }
+    }
+
+    public class ModniKreatorModel
+    {
+        public string MBR { get; set; }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public string Pol { get; set; }
+        public DateTime DatumRodjenja { get; set; }
+        public string ZemljaPorekla { get; set; }
+        public int CenaUsluge { get; set; }
+    }
+
+    public class ModniKreatorRequestModel
+    {
+        public ModniKreatorModel ModniKreator { get; set; }
+        public int OrganizatorID { get; set; }
+        public string ModnaKucaNaziv { get; set; }
+    }
+
+    
+
+    public class OrganizatorModel
+    {
+        public int OrganizatorID { get; set; }
+        public string Kolekcija { get; set; }
+        public string PrvaModnaRevija { get; set; }
+    }
+
+    public class ModnaKucaModel
+    {
+        public string Naziv { get; set; }
+        public string ImeOsnivaca { get; set; }
+        public string PrezimeOsnivaca { get; set; }
+        public string Drzava { get; set; }
+        public string Grad { get; set; }
+    }
+}

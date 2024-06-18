@@ -1,0 +1,107 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = KulinariumUI.Client
+build_property.RootNamespace = KulinariumUI.Client
+build_property.ProjectDir = C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Maneken/DodajManekena.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuZWtlblxEb2Rhak1hbmVrZW5hLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Maneken/IzmeniManekena.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuZWtlblxJem1lbmlNYW5la2VuYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Maneken/Maneken.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuZWtlblxNYW5la2VuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modna Revija/DodajModnuReviju.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmEgUmV2aWphXERvZGFqTW9kbnVSZXZpanUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modna Revija/IzmeniModnuReviju.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmEgUmV2aWphXEl6bWVuaU1vZG51UmV2aWp1LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modna Revija/ModnaRevija.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmEgUmV2aWphXE1vZG5hUmV2aWphLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/ModnaAgencija/DodajModnuAgenciju.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmFBZ2VuY2lqYVxEb2Rhak1vZG51QWdlbmNpanUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/ModnaAgencija/IzmeniModnuAgenciju.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmFBZ2VuY2lqYVxJem1lbmlNb2RudUFnZW5jaWp1LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/ModnaAgencija/ModnaAgencija.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmFBZ2VuY2lqYVxNb2RuYUFnZW5jaWphLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modne Kuce/DodajModnuKucu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmUgS3VjZVxEb2Rhak1vZG51S3VjdS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modne Kuce/IzmeniModnuKucu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmUgS3VjZVxJem1lbmlNb2RudUt1Y3UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modne Kuce/ModnaKuca.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmUgS3VjZVxNb2RuYUt1Y2EucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modni Kreator/DodajModnogKreatora.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmkgS3JlYXRvclxEb2Rhak1vZG5vZ0tyZWF0b3JhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modni Kreator/IzmeniModnogKreatora.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmkgS3JlYXRvclxJem1lbmlNb2Rub2dLcmVhdG9yYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Pages/Modni Kreator/ModniKreatori.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kbmkgS3JlYXRvclxNb2RuaUtyZWF0b3JpLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-w03h3ktg15
+
+[C:/Users/Windows10/Desktop/GitHub/FashionWeek/KulinariumUI/KulinariumUI/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-078phld6kc

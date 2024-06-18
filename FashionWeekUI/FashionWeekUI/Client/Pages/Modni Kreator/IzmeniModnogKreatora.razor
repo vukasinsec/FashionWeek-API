@@ -1,0 +1,86 @@
+﻿@page "/IzmeniModnogKreatora{mbr}"
+
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<MudContainer>
+    <MudGrid>
+        <!-- Form for editing an existing fashion designer -->
+        <MudItem xs="12" sm="6" md="4">
+            <MudField Label="Outlined" Variant="Variant.Outlined">@Mbr</MudField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Ime" Label="Ime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Prezime" Label="Prezime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Pol" Label="Pol" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="DatumRodjenja" Label="Datum Rođenja" Variant="Variant.Text" Type="date"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ZemljaPorekla" Label="Zemlja Porekla" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="CenaUsluge" Label="Cena Usluge" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => IzmeniKreatora()" FullWidth="true">IZMENI MODNOG KREATORA</MudButton>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    [Parameter]
+    public string Mbr { get; set; }
+
+    public string Ime { get; set; }
+    public string Prezime { get; set; }
+    public string Pol { get; set; }
+    public DateTime DatumRodjenja { get; set; }
+    public string ZemljaPorekla { get; set; }
+    public int CenaUsluge { get; set; }
+
+
+
+    async Task IzmeniKreatora()
+    {
+        var modniKreator = new ModniKreatorModel
+            {
+                MBR = Mbr,
+                Ime = Ime,
+                Prezime = Prezime,
+                Pol = Pol,
+                DatumRodjenja = DatumRodjenja,
+                ZemljaPorekla = ZemljaPorekla,
+                CenaUsluge = CenaUsluge,
+            };
+
+        HttpResponseMessage response = await Http.PutAsJsonAsync("https://localhost:7234/ModniKreator/IzmeniModnogKreatora", modniKreator);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modni kreator je ažuriran!", Severity.Success);
+            Navigation.NavigateTo("/ModniKreatori");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo ažuriranje modnog kreatora", Severity.Error);
+        }
+    }
+
+    public class ModniKreatorModel
+    {
+        public string MBR { get; set; }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public string Pol { get; set; }
+        public DateTime DatumRodjenja { get; set; }
+        public string ZemljaPorekla { get; set; }
+        public int CenaUsluge { get; set; }
+    }
+}

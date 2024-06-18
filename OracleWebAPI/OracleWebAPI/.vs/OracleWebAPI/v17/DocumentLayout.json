@@ -1,0 +1,692 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\controllers\\manekencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\manekencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\controllers\\modnikreatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\modnikreatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\modnikreatorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\modnikreatorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\controllers\\modnarevijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\modnarevijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\maneken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\maneken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\manekenview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\manekenview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\controllers\\specijalnigostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\specijalnigostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\controllers\\modnaagencijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\modnaagencijacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\controllers\\organizatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\organizatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\osoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\osoba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\modnikreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\modnikreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\specijalnigost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\specijalnigost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\organizatorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\organizatorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\webapi\\models\\modnakucarequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCFA70B9-AFBA-499A-B951-A07B8AE6314E}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\models\\modnakucarequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\specijalnigostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\specijalnigostview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\predstavljaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\predstavljaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\modnarevijaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\modnarevijaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\modnakucaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\modnakucaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\modnaagencijaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\modnaagencijaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\casopisiidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\casopisiidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\casopisiview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\casopisiview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\mapiranja\\modnaagencijamapiranja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\mapiranja\\modnaagencijamapiranja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\mapiranja\\manekenmapiranja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\mapiranja\\manekenmapiranja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\modnaagencija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\modnaagencija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\nazivizemaljaid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\nazivizemaljaid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\nazivizemaljaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\nazivizemaljaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\nazivizemalja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\nazivizemalja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\nazivizemaljaidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\nazivizemaljaidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\imenavlasnikaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\imenavlasnikaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\nastupaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\nastupaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\predstavljaidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\predstavljaidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\nastupaidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\nastupaidview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\nastupaid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\nastupaid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\dtos\\osobaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\dtos\\osobaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|c:\\users\\windows10\\desktop\\github\\fashionweek\\oraclewebapi\\oraclewebapi\\prodavnicalibrary\\entiteti\\modnarevija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21396471-6118-4FA7-9B8C-903B8C9ADCC2}|ProdavnicaLibrary\\FashionWeekLibrary.csproj|solutionrelative:prodavnicalibrary\\entiteti\\modnarevija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DataLayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\ErrorMessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManekenController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ManekenController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\ManekenController.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ManekenController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\ManekenController.cs",
+              "ViewState": "AQIAANYAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T20:07:26.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-13T18:24:26.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Maneken.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\Maneken.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\Maneken.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\Maneken.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\Maneken.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:52:16.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T08:53:37.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrganizatorController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\OrganizatorController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\OrganizatorController.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\OrganizatorController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\OrganizatorController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAASwBQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T08:03:06.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManekenView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ManekenView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\ManekenView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ManekenView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\ManekenView.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAkwCYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:43:32.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModniKreatorView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModniKreatorView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\ModniKreatorView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModniKreatorView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\ModniKreatorView.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAADwvy8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T08:09:36.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModniKreatorController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ModniKreatorController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\ModniKreatorController.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ModniKreatorController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\ModniKreatorController.cs",
+              "ViewState": "AQIAAMoAAAAAAAAAAADwv88AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T17:58:26.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DataProvider.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DataProvider.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DataProvider.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DataProvider.cs",
+              "ViewState": "AQIAADAFAAAAAAAAAAAUwEYFAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T17:03:06.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ModniKreator.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\ModniKreator.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\ModniKreator.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\ModniKreator.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\ModniKreator.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T08:09:24.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Osoba.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\Osoba.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\Osoba.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\Osoba.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\Osoba.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T09:50:43.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModnaRevijaController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ModnaRevijaController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\ModnaRevijaController.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ModnaRevijaController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\ModnaRevijaController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAADwv2YAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T08:36:23.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SpecijalniGostController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\SpecijalniGostController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\SpecijalniGostController.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\SpecijalniGostController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\SpecijalniGostController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAiwCYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T13:22:36.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModnaAgencijaController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ModnaAgencijaController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\ModnaAgencijaController.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Controllers\\ModnaAgencijaController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\ModnaAgencijaController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T11:19:56.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ModnaRevijaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModnaRevijaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\ModnaRevijaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModnaRevijaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\ModnaRevijaView.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T17:24:41.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ModnaKucaRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Models\\ModnaKucaRequestModel.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Models\\ModnaKucaRequestModel.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\WebAPI\\Models\\ModnaKucaRequestModel.cs",
+              "RelativeToolTip": "WebAPI\\Models\\ModnaKucaRequestModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T08:21:29.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrganizatorView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\OrganizatorView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\OrganizatorView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\OrganizatorView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\OrganizatorView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T18:18:37.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SpecijalniGost.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\SpecijalniGost.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\SpecijalniGost.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\SpecijalniGost.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\SpecijalniGost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T09:24:31.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PredstavljaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\PredstavljaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\PredstavljaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\PredstavljaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\PredstavljaView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T18:10:33.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SpecijalniGostView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\SpecijalniGostView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\SpecijalniGostView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\SpecijalniGostView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\SpecijalniGostView.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA7wCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T13:07:40.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ModnaKucaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModnaKucaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\ModnaKucaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModnaKucaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\ModnaKucaView.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T08:24:25.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CasopisiIdView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\CasopisiIdView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\CasopisiIdView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\CasopisiIdView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\CasopisiIdView.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwBQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T13:15:40.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ModnaAgencijaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModnaAgencijaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\ModnaAgencijaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ModnaAgencijaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\ModnaAgencijaView.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:23:52.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CasopisiView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\CasopisiView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\CasopisiView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\CasopisiView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\CasopisiView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T13:15:34.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ModnaAgencijaMapiranja.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Mapiranja\\ModnaAgencijaMapiranja.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Mapiranja\\ModnaAgencijaMapiranja.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Mapiranja\\ModnaAgencijaMapiranja.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Mapiranja\\ModnaAgencijaMapiranja.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:14:30.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ModnaAgencija.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\ModnaAgencija.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\ModnaAgencija.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\ModnaAgencija.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\ModnaAgencija.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:52:20.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ManekenMapiranja.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Mapiranja\\ManekenMapiranja.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Mapiranja\\ManekenMapiranja.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Mapiranja\\ManekenMapiranja.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Mapiranja\\ManekenMapiranja.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:52:30.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NaziviZemaljaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NaziviZemaljaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\NaziviZemaljaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NaziviZemaljaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\NaziviZemaljaView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T13:52:04.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NaziviZemaljaId.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\NaziviZemaljaId.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\NaziviZemaljaId.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\NaziviZemaljaId.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\NaziviZemaljaId.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAwwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:13:49.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NaziviZemalja.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\NaziviZemalja.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\NaziviZemalja.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\NaziviZemalja.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\NaziviZemalja.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:13:45.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NaziviZemaljaIdView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NaziviZemaljaIdView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\NaziviZemaljaIdView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NaziviZemaljaIdView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\NaziviZemaljaIdView.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T13:52:12.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ImenaVlasnikaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ImenaVlasnikaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\ImenaVlasnikaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\ImenaVlasnikaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\ImenaVlasnikaView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:12:21.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "NastupaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NastupaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\NastupaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NastupaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\NastupaView.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswBYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T09:20:22.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PredstavljaIdView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\PredstavljaIdView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\PredstavljaIdView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\PredstavljaIdView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\PredstavljaIdView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T18:00:34.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NastupaIdView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NastupaIdView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\NastupaIdView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\NastupaIdView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\NastupaIdView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T09:22:34.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "NastupaId.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\NastupaId.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\NastupaId.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\NastupaId.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\NastupaId.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T09:19:06.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "OsobaView.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\OsobaView.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\DTOs\\OsobaView.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DTOs\\OsobaView.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\DTOs\\OsobaView.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA9wBsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:43:55.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ModnaRevija.cs",
+              "DocumentMoniker": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\ModnaRevija.cs",
+              "RelativeDocumentMoniker": "ProdavnicaLibrary\\Entiteti\\ModnaRevija.cs",
+              "ToolTip": "C:\\Users\\Windows10\\Desktop\\GitHub\\FashionWeek\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Entiteti\\ModnaRevija.cs",
+              "RelativeToolTip": "ProdavnicaLibrary\\Entiteti\\ModnaRevija.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T17:29:41.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Result.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Result.cs",
+              "ToolTip": "C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Result.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\Result.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAswDEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T16:38:18.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DataLayer.cs",
+              "DocumentMoniker": "C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DataLayer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DataLayer.cs",
+              "ToolTip": "C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DataLayer.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\DataLayer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T16:37:41.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ErrorMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\ErrorMessage.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\ErrorMessage.cs",
+              "ToolTip": "C:\\Users\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\ErrorMessage.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Kristina\\Downloads\\OracleWebAPI (2)\\OracleWebAPI\\OracleWebAPI\\ProdavnicaLibrary\\ErrorMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T16:37:29.599Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 77,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

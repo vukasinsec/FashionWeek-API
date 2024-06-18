@@ -1,0 +1,191 @@
+﻿@using KulinariumUI.Client.Services.Interfaces
+@using MudBlazor.Utilities
+@inject HttpClient HTTP
+@inject ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject ISnackbar Snackbar
+@inject IMenuService MenuService
+<MudThemeProvider @bind-IsDarkMode="@ThemeSwitch" Theme="m_myCustomTheme"/>
+
+<MudAppBar Elevation="1">
+    <AuthorizeView>
+        <Authorized>
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@(e => DrawerToggle())"/>
+        </Authorized>
+    </AuthorizeView>
+    <MudLink Href="/">
+        <MudText Typo="Typo.h5" Class="ml-3">Fashion Week</MudText>
+    </MudLink>
+    <MudSpacer/>
+    @*<MudIconButton Icon="@Icons.Material.Filled.AccountCircle" Color="Color.Inherit" Edge="Edge.End" />*@
+    <AuthorizeView Context="Buyers" Roles="Administrator,FreeUser,PaidUserT1,PaidUserT2">
+        <Authorized >
+            <MudButton Href="/upgradeaccount" Class="d-none d-lg-block mr-6" Variant="Variant.Filled" Color="Color.Secondary">Upgrade Account</MudButton>
+            @*Dont forget to clear storage if user upgrades or log in user automatically with new user token*@
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView Context="NotBusinessUsers" Roles="Administrator,FreeUser,PaidUserT1,PaidUserT2,PaidUserT3">
+        <Authorized >
+            <MudButton Href="/business"Class="d-none d-lg-block mr-6" Variant="Variant.Filled" Color="Color.Primary">Create Business</MudButton>
+            @*Dont forget to clear storage if user upgrades or log in user automatically with new user token*@
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView Context="BusinessOwner" Roles="Administrator,BusinessOwner">
+        <Authorized>
+            <MudButton Href="/mybusiness" Class="d-none d-lg-block mr-6" Variant="Variant.Filled" Color="Color.Primary">Manage Business</MudButton>
+            @*Dont forget to clear storage if user upgrades or log in user automatically with new user token*@
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView Context="Administrator" Roles="Administrator">
+        <Authorized>
+            <MudButton
+                Href="/admin"
+                StartIcon="@Icons.Material.Filled.AdminPanelSettings"
+                Variant="Variant.Text"
+                Color="Color.Inherit">
+                Admin
+            </MudButton>
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView Context="Moderator" Roles="Moderator">
+        <Authorized>
+            <MudButton
+                Href="/moderate"
+                StartIcon="@Icons.Material.Filled.AdminPanelSettings"
+                Variant="Variant.Text"
+                Color="Color.Inherit">
+                Moderator
+            </MudButton>
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView Context="BusinessUser" Roles="BusinessOwner">
+        <Authorized>
+            <MudButton
+                Href="/yourbusiness"
+                StartIcon="@Icons.Material.Filled.AdminPanelSettings"
+                Variant="Variant.Text"
+                Color="Color.Inherit">
+                BusinessOwner
+            </MudButton>
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView>
+    <Authorized>
+    
+    <MudButton OnClick="@LogOut"
+               StartIcon="@Icons.Material.Filled.Logout"
+               Variant="Variant.Text"
+               Color="Color.Inherit">
+        Sign Out
+    </MudButton>
+    </Authorized>
+    </AuthorizeView>
+    <MudToggleIconButton Class="ml-2" @bind-Toggled="@ThemeSwitch"
+                         Icon="@Icons.Material.Filled.ModeNight" Color="@Color.Inherit" Title="Off"
+                         ToggledIcon="@Icons.Material.Filled.WbSunny" ToggledColor="@Color.Inherit" ToggledTitle="On"/>
+</MudAppBar>
+@*NavMenu*@
+
+   
+        <MudDrawer @bind-Open="m_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+            <MudDrawerHeader>
+                <MudText Typo="Typo.h6">Menu</MudText>
+            </MudDrawerHeader>
+            <MudNavLink Href="/modnaagencija" Match="NavLinkMatch.All">Modne Agencije</MudNavLink>
+            <MudNavLink Href="/Maneken" Match="NavLinkMatch.All">Manekeni</MudNavLink>
+             <MudNavLink Href="/ModnaKuca" Match="NavLinkMatch.All">Modne Kuce</MudNavLink>
+    <MudNavLink Href="/ModnaRevija" Match="NavLinkMatch.All">Modne revije</MudNavLink>
+    <MudNavLink Href="/ModniKreatori" Match="NavLinkMatch.All">Modni Kreatori</MudNavLink>
+
+            <MudSpacer/>
+           
+        </MudDrawer>
+    
+
+
+@code {
+
+    string SubType { get; set; } = string.Empty;
+
+    string Words { get; set; } = string.Empty;
+
+    string MaxWords { get; set; } = string.Empty;
+
+    double WordsBar { get; set; } = 0;
+
+    int WordsText { get; set; } = 0;
+
+    string Username { get; set; } = string.Empty;
+
+    string? StartLetter
+    {
+        get => m_startLetter;
+        set => m_startLetter = value?[..1];
+    }
+
+    private string? m_startLetter;
+
+    bool m_visible = true;
+
+    int m_subscriptionTier = 0;
+
+    bool m_drawerOpen = true;
+
+    private bool ThemeSwitch { get; set; } = true;
+    MudTheme m_myCustomTheme = new() { Palette = new Palette(), PaletteDark = new PaletteDark { Surface = new MudColor("#32333d") }, LayoutProperties = new LayoutProperties { DrawerWidthLeft = "350px", DrawerWidthRight = "350px" } };
+
+    void DrawerToggle()
+    {
+        m_drawerOpen = !m_drawerOpen;
+    }
+
+    private async Task LogOut()
+    {
+        await LocalStorage.RemoveItemsAsync(new[] { "token", "identifier", "username", "subtype", "words" });
+        await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        StateHasChanged();
+        NavigationManager.NavigateTo("/");
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        MenuService.RefreshRequested += Refresh;
+        if (firstRender)
+        {
+            Refresh();
+            StateHasChanged();
+        }
+    }
+
+    private async void Refresh()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        if (authState.User.Identity is {IsAuthenticated: false })
+            return;
+
+        var username = await LocalStorage.GetItemAsStringAsync("username");
+        var subtype = await LocalStorage.GetItemAsStringAsync("subtype");
+        var words = await LocalStorage.GetItemAsync<int>("words");
+        var maxWords = await LocalStorage.GetItemAsync<int>("maxwords");
+
+        StartLetter = Username = username;
+        SubType = subtype;
+        MaxWords = maxWords.ToString();
+        Words = words.ToString();
+
+        if (maxWords == 0)
+        {
+            WordsText = maxWords;
+            WordsBar = 0;
+        }
+        else
+        {
+            var result = Math.Round((double)(100 * words / maxWords));
+            WordsBar = 100 - result;
+            WordsText = int.Parse(WordsBar.ToString());
+        }
+    }
+
+}

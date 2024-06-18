@@ -1,0 +1,310 @@
+﻿@page "/ModnaRevija"
+
+@using System.Net.Http.Json
+@inject NavigationManager manager
+@inject HttpClient Http
+@inject ISnackbar Snackbar
+@using System.Text
+@using System.Text.Json
+@using System.Text.Json.Serialization
+
+<MudContainer Height="100%" Width="100%">
+    <MudSimpleTable Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+        <thead>
+            <tr>
+                <th>Id Modne Revije</th>
+                <th>Redni Broj</th>
+                <th>Naziv</th>
+                <th>Grad</th>
+                <th>Datum Održavanja</th>
+                <th>Vreme Održavanja</th>
+                <th>Ime Javne Ličnosti</th>
+                <th>Prezime Javne Ličnosti</th>
+                <th>Zanimanje JL</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (modneRevije == null)
+            {
+                <tr>
+                    <td colspan="8">Loading...</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var revija in modneRevije)
+                {
+                    <tr>
+                        <td>@revija.IdModneRevije</td>
+                        <td>@revija.RedniBroj</td>
+                        <td>@revija.Naziv</td>
+                        <td>@revija.Grad</td>
+                        <td>@revija.DatumOdrzavanja.ToShortDateString()</td>
+                        <td>@revija.VremeOdrzavanja.ToString()h</td>
+
+                        <td>@revija.ImeJavneLicnosti</td>
+                        <td>@revija.PrezimeJavneLicnosti</td>
+                        <td>@revija.ZanimanjeJL</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectModnaRevija(revija.IdModneRevije)">
+                                Izaberi
+                            </MudButton>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </MudSimpleTable>
+    <div class="d-flex gap-2 mt-2">
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="@DodajModnuReviju">DODAJ MODNU REVIJU</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => IzmeniModnuReviju(idModneRevije)" Color="Color.Info" Size="Size.Small">IZMENI MODNU REVIJU</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="@ObrisiModnuReviju" Color="Color.Error">OBRISI MODNU REVIJU</MudButton>
+    </div>
+    <div class="d-flex gap-2 mt-2">
+        <MudButton Class="mb-8" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => PrikaziSpecijalneGoste()" Color="Color.Info" Size="Size.Small">Prikazi Specijalne Goste</MudButton>
+        <MudButton Class="mb-8" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => PrikaziManekene()" Color="Color.Info" Size="Size.Small">Prikazi Manekene Koji Nastupaju</MudButton>
+    </div>
+    @if (specijalniGosti != null && specijalniGosti.Any() && specijalniGosti.Count() != 0)
+    {
+        <h4>Specijalni Gosti</h4>
+        <MudSimpleTable Class="mb-7" Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+            
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Pol</th>
+                    <th>Datum Rođenja</th>
+                    <th>Zemlja Porekla</th>
+                    <th>Cena Usluge</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var gost in specijalniGosti)
+                {
+                    <tr>
+                        <td>@gost.Ime</td>
+                        <td>@gost.Prezime</td>
+                        <td>@gost.Pol</td>
+                        <td>@gost.DatumRodjenja.ToShortDateString()</td>
+                        <td>@gost.ZemljaPorekla</td>
+                        <td>@gost.CenaUsluge</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => ObrisiSpecijalnogGosta(gost.Mbr)">
+                                Obrisi
+                            </MudButton>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    }
+    @if (manekeni != null && manekeni.Any() && manekeni.Count() != 0)
+    {
+        <h4>Manekeni</h4>
+        <MudSimpleTable Class="" Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Pol</th>
+                    <th>Datum Rođenja</th>
+                    <th>Zemlja Porekla</th>
+                    <th>Boja Kose</th>
+                    <th>Visina</th>
+                    <th>Tezina</th>
+                    <th>Konfekcijski Broj</th>
+                    <th>Boja Ociju</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var maneken in manekeni)
+                {
+                    <tr>
+                        <td>@maneken.Ime</td>
+                        <td>@maneken.Prezime</td>
+                        <td>@maneken.Pol</td>
+                        <td>@maneken.DatumRodjenja.ToShortDateString()</td>
+                        <td>@maneken.ZemljaPorekla</td>
+                        <td>@maneken.BojaKose</td>
+                        <td>@maneken.Visina</td>
+                        <td>@maneken.Tezina</td>
+                        <td>@maneken.KonfekcijskiBroj</td>
+                        <td>@maneken.BojaOciju</td>
+                        
+                    </tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    }
+</MudContainer>
+
+@code {
+    private string nazivModneRevije;
+    private List<ModnaRevijaModel>? modneRevije;
+    private List<SpecijalniGost> specijalniGosti;
+    private List<ManekenModel> manekeni;
+
+    [Inject] private IDialogService DialogService { get; set; }
+    string state = "Message box hasn't been opened yet";
+
+    public int idModneRevije { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        modneRevije = await Http.GetFromJsonAsync<List<ModnaRevijaModel>>("https://localhost:7234/ModnaRevija/PreuzmiModneRevije");
+    }
+
+    private void SelectModnaRevija(int id)
+    {
+        idModneRevije = id;
+        Snackbar.Add("Izabrali ste modnu reviju sa nazivom: " + id, Severity.Success);
+    }
+
+    public void DodajModnuReviju()
+    {
+        manager.NavigateTo("/DodajModnuReviju");
+    }
+
+    public void IzmeniModnuReviju(int id)
+    {
+        manager.NavigateTo($"/IzmeniModnuReviju{id}");
+    }
+
+    async Task ObrisiModnuReviju()
+    {
+        if (idModneRevije == 0)
+        {
+            Snackbar.Add("Izaberite naziv modne revije", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7234/ModnaRevija/ObrisiModnuReviju/{idModneRevije}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            modneRevije = await Http.GetFromJsonAsync<List<ModnaRevijaModel>>("https://localhost:7234/ModnaRevija/PreuzmiModneRevije");
+            Snackbar.Add("Modna revija je obrisana!", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo brisanje modne revije", Severity.Error);
+        }
+    }
+
+    public class Result<TSuccess, TError>
+    {
+        public TSuccess Success { get; set; }
+        public TError Error { get; set; }
+        public bool IsSuccess { get; set; }
+    }
+
+    public class ModniKreatorView
+    {
+        public string MBRModniKreator { get; set; }
+    }
+
+    public class ErrorMessage
+    {
+        public string Message { get; set; }
+        public int Code { get; set; }
+    }
+
+    async Task PrikaziSpecijalneGoste()
+    {
+        if (idModneRevije == 0)
+        {
+            Snackbar.Add("Izaberite modnu reviju", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.GetAsync($"https://localhost:7234/ModnaRevija/PreuzmiSpecijalneGosteNaModnojReviji/{idModneRevije}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            string responseString = await response.Content.ReadAsStringAsync();
+            specijalniGosti = JsonSerializer.Deserialize<List<SpecijalniGost>>(responseString, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            if (specijalniGosti.Count == 0)
+            {
+                Snackbar.Add("Nema specijalnih gostiju na modnoj reviji", Severity.Info);
+            }
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dobavljanje specijalnih gostiju", Severity.Error);
+        }
+    }
+
+    async Task ObrisiSpecijalnogGosta(string mbr)
+    {
+        if (idModneRevije == 0 || string.IsNullOrEmpty(mbr))
+        {
+            Snackbar.Add("Izaberite modnu reviju i specijalnog gosta", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.DeleteAsync($"https://localhost:7234/SpecijalniGost/ObrisiGostaRevije/{idModneRevije}/{mbr}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Specijalni gost je uspešno obrisan!", Severity.Success);
+
+            // Refresh the list of special guests
+            await PrikaziSpecijalneGoste();
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo brisanje specijalnog gosta", Severity.Error);
+        }
+    }
+
+    async Task PrikaziManekene()
+    {
+        if (idModneRevije == 0)
+        {
+            Snackbar.Add("Izaberite modnu reviju", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.GetAsync($"https://localhost:7234/Maneken/PreuzmiManekeneSaModneRevije/{idModneRevije}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            string responseString = await response.Content.ReadAsStringAsync();
+            manekeni = JsonSerializer.Deserialize<List<ManekenModel>>(responseString, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            if (manekeni.Count == 0)
+            {
+                Snackbar.Add("Nema manekena na modnoj reviji", Severity.Info);
+            }
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dobavljanje manekena", Severity.Error);
+        }
+    }
+
+    
+
+    public class SpecijalniGost
+    {
+        public int id { get; set; }
+        public int CenaUsluge { get; set; }
+        public int? GostNaModnojReviji { get; set; }
+        public int? ModneRevijeMK { get; set; }
+        public int? PredstavljaMK { get; set; }
+        public string Mbr { get; set; }
+        public string Pol { get; set; }
+        public DateTime DatumRodjenja { get; set; }
+        public string ZemljaPorekla { get; set; }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+    }
+
+    
+}

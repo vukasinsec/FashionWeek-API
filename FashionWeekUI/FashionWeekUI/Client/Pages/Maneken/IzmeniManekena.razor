@@ -1,0 +1,102 @@
+﻿@page "/IzmeniManekena{Mbr}"
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<MudContainer>
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudField Label="Mbr" Variant="Variant.Outlined">@Mbr</MudField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Ime" Label="Ime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Prezime" Label="Prezime" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Pol" Label="Pol" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="DatumRodjenja" Label="Datum Rođenja" Variant="Variant.Text" Type="date"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ZemljaPorekla" Label="Zemlja Porekla" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="BojaKose" Label="Boja Kose" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Visina" Label="Visina" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Tezina" Label="Tezina" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            
+                <MudSelect Margin="Margin.Normal" T="string" Label="Konfekcijski Broj" Variant="Variant.Text" @bind-Value="KonfekcijskiBroj">
+                    @foreach (var size in Sizes)
+                    {
+                        <MudSelectItem Value="@size">@size</MudSelectItem>
+                    }
+                </MudSelect>
+            
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="BojaOciju" Label="Boja Ociju" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => IzmeniManekenaBtn()" FullWidth="true">IZMENI MANEKENA</MudButton>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    [Parameter]
+    public string Mbr { get; set; }
+
+    private List<string> Sizes = new List<string> { "S", "M", "L", "XL" };
+
+
+    public string Ime { get; set; }
+    public string Prezime { get; set; }
+    public string Pol { get; set; }
+    public DateTime DatumRodjenja { get; set; }
+    public string ZemljaPorekla { get; set; }
+    public string BojaKose { get; set; }
+    public int Visina { get; set; }
+    public int Tezina { get; set; }
+    public string KonfekcijskiBroj { get; set; }
+    public string BojaOciju { get; set; }
+
+    
+
+    async Task IzmeniManekenaBtn()
+    {
+        var izmenjeniManeken = new ManekenModel
+            {
+                Mbr = Mbr,
+                Ime = Ime,
+                Prezime = Prezime,
+                Pol = Pol,
+                DatumRodjenja = DatumRodjenja,
+                ZemljaPorekla = ZemljaPorekla,
+                BojaKose = BojaKose,
+                Visina = Visina,
+                Tezina = Tezina,
+                KonfekcijskiBroj = KonfekcijskiBroj,
+                BojaOciju = BojaOciju
+            };
+
+        HttpResponseMessage response = await Http.PutAsJsonAsync($"https://localhost:7234/Maneken/IzmeniManekena", izmenjeniManeken);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Maneken je uspešno izmenjen!", Severity.Success);
+            Navigation.NavigateTo("/Maneken");
+        }
+        else
+        {
+            Snackbar.Add("Neuspela izmena manekena", Severity.Error);
+        }
+    }
+}

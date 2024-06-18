@@ -1,0 +1,210 @@
+﻿@page "/DodajModnuKucu"
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<MudContainer>
+    <MudGrid>
+        <!-- Form for adding a new fashion house -->
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Naziv" Label="Naziv" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ImeOsnivaca" Label="Ime Osnivaca" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="PrezimeOsnivaca" Label="Prezime Osnivaca" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Drzava" Label="Država" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Grad" Label="Grad" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+
+        <!-- Show/Hide the organizer table and text field -->
+        @if (showOrganizerFields)
+        {
+            <MudItem xs="12" sm="6" md="4">
+                <MudTextField @bind-Value="OrganizatorID" Label="Organizator ID" Variant="Variant.Text" Disabled="true"></MudTextField>
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudTable Items="@organizatori" Hover="true">
+                    <HeaderContent>
+                        <MudTh>Organizator ID</MudTh>
+                        <MudTh>Kolekcija</MudTh>
+                        <MudTh>Prva Modna Revija</MudTh>
+                        <MudTh>Akcija</MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Organizator ID">@context.OrganizatorID</MudTd>
+                        <MudTd DataLabel="Kolekcija">@context.Kolekcija</MudTd>
+                        <MudTd DataLabel="Prva Modna Revija">@context.PrvaModnaRevija</MudTd>
+                        <MudTd>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectOrganizator(context.OrganizatorID)">
+                                Izaberi
+                            </MudButton>
+                        </MudTd>
+                    </RowTemplate>
+                </MudTable>
+            </MudItem>
+        }
+
+        <MudItem xs="12" sm="6" md="4">
+            @if (!showOrganizerFields)
+            {
+                <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => DodajKucu()" FullWidth="true">DODAJ MODNU KUĆU</MudButton>
+                <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => ToggleOrganizerFields()" FullWidth="true">PRIKAŽI ORGANIZATORE</MudButton>
+            }
+            else
+            {
+                <MudContainer MaxWidth="MaxWidth.Large">
+                    <MudGrid>
+                        <!-- Dugme za dodavanje modne kuće sa organizatorom -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => DodajModnuKucuSaOrganizatoromPayload()" FullWidth="true">DODAJ MODNU KUĆU SA ORGANIZATOROM</MudButton>
+                        </MudItem>
+
+                        <!-- Dugme za povratak -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => ToggleOrganizerFields()" FullWidth="true">NAZAD</MudButton>
+                        </MudItem>
+                    </MudGrid>
+                </MudContainer>
+
+            }
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    public string Naziv { get; set; }
+    public string ImeOsnivaca { get; set; }
+    public string PrezimeOsnivaca { get; set; }
+    public string Drzava { get; set; }
+    public string Grad { get; set; }
+    public int OrganizatorID { get; set; }
+    private bool showOrganizerFields = false;
+    private void ToggleOrganizerFields()
+    {
+        showOrganizerFields = !showOrganizerFields;
+    }
+
+    private List<OrganizatorModel> organizatori;
+
+    protected override async Task OnInitializedAsync()
+    {
+        organizatori = await Http.GetFromJsonAsync<List<OrganizatorModel>>("https://localhost:7234/Organizator/PreuzmiOrganizatore");
+    }
+
+    private void SelectOrganizator(int id)
+    {
+        OrganizatorID = id;
+    }
+
+    public async Task DodajKucu()
+    {
+
+        var novaKuca = new ModnaKucaModel
+            {
+                Naziv = Naziv,
+                ImeOsnivaca = ImeOsnivaca,
+                PrezimeOsnivaca = PrezimeOsnivaca,
+                Drzava = Drzava,
+                Grad = Grad,
+            };
+
+        var response = await Http.PostAsJsonAsync("https://localhost:7234/ModnaKuca/DodajModnuKucu", novaKuca);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modna kuća je dodana!", Severity.Success);
+            Navigation.NavigateTo("/ModnaKuca");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje modne kuće", Severity.Error);
+        }
+    }
+
+    public async Task DodajModnuKucuSaOrganizatorom()
+    {
+
+        var novaKuca = new ModnaKucaModel
+            {
+                Naziv = Naziv,
+                ImeOsnivaca = ImeOsnivaca,
+                PrezimeOsnivaca = PrezimeOsnivaca,
+                Drzava = Drzava,
+                Grad = Grad,
+            };
+
+
+
+        OrganizatorID = OrganizatorID == 0 ? 0 : OrganizatorID;
+
+
+        var response = await Http.PostAsJsonAsync($"https://localhost:7234/ModnaKuca/KreirajModnuKucu/{OrganizatorID}", novaKuca);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modna kuća je dodana!", Severity.Success);
+            Navigation.NavigateTo("/ModnaKuca");
+        }
+        else
+        {
+            Console.Write(response);
+            Snackbar.Add("Neuspelo dodavanje modne kuće", Severity.Error);
+        }
+    }
+
+    public async Task DodajModnuKucuSaOrganizatoromPayload()
+    {
+
+        var novaKuca = new ModnaKucaModel
+            {
+                Naziv = Naziv,
+                ImeOsnivaca = ImeOsnivaca,
+                PrezimeOsnivaca = PrezimeOsnivaca,
+                Drzava = Drzava,
+                Grad = Grad,
+            };
+
+        var requestModel = new ModnaKucaRequestModel
+            {
+                ModnaKuca = novaKuca,
+                OrganizatorID = OrganizatorID == 0 ? 0 : OrganizatorID
+            };
+
+        var response = await Http.PostAsJsonAsync("https://localhost:7234/ModnaKuca/KreirajModnuKucuPayload", requestModel);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modna kuća je dodana!", Severity.Success);
+            Navigation.NavigateTo("/ModnaKuca");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje modne kuće", Severity.Error);
+        }
+    }
+
+    public class ModnaKucaRequestModel
+    {
+        public ModnaKucaModel ModnaKuca { get; set; }
+        public int OrganizatorID { get; set; }
+    }
+
+
+    public class OrganizatorModel
+    {
+        public int OrganizatorID { get; set; }
+        public string Kolekcija { get; set; }
+        public string PrvaModnaRevija { get; set; }
+    }
+
+
+    
+}

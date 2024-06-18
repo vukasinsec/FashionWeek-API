@@ -1,0 +1,15 @@
+﻿@using FashionWeek.Client.Shared
+<CascadingAuthenticationState>
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
+        <FocusOnNavigate RouteData="@routeData" Selector="h1"/>
+    </Found>
+    <NotFound>
+        <PageTitle>Not Found</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p role="alert">There's Nothing At This Address</p>
+        </LayoutView>
+    </NotFound>
+</Router>
+</CascadingAuthenticationState>

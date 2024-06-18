@@ -1,0 +1,12 @@
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\ProdavnicaLibrary.deps.json
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\ProdavnicaLibrary.dll
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\bin\Debug\net7.0\ProdavnicaLibrary.pdb
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ProdavnicaLibrary.csproj.AssemblyReference.cache
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ProdavnicaLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ProdavnicaLibrary.AssemblyInfoInputs.cache
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ProdavnicaLibrary.AssemblyInfo.cs
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ProdavnicaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ProdavnicaLibrary.dll
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\refint\ProdavnicaLibrary.dll
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ProdavnicaLibrary.pdb
+C:\Users\Kristina\Downloads\OracleWebAPI (2)\OracleWebAPI\OracleWebAPI\ProdavnicaLibrary\obj\Debug\net7.0\ref\ProdavnicaLibrary.dll

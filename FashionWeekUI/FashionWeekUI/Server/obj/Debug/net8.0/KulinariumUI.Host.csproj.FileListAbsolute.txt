@@ -1,0 +1,250 @@
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.FileFormats.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.exe
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.deps.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.runtimeconfig.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\MudBlazor.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cs
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.KulinariumUI.Host.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.build.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\scopedcss\bundle\KulinariumUI.Host.styles.css
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\Kulinari.9FB3B341.Up2Date
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\refint\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.genruntimeconfig.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek3\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\ref\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.FileFormats.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.exe
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.deps.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.runtimeconfig.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\MudBlazor.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.pdb
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cache
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cs
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.sourcelink.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.KulinariumUI.Host.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.build.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\scopedcss\bundle\KulinariumUI.Host.styles.css
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\Kulinari.9FB3B341.Up2Date
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\refint\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.genruntimeconfig.cache
+C:\Users\Windows10\Desktop\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\ref\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.FileFormats.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.exe
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.deps.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.runtimeconfig.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\MudBlazor.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cs
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.KulinariumUI.Host.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.build.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\scopedcss\bundle\KulinariumUI.Host.styles.css
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\Kulinari.9FB3B341.Up2Date
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\refint\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.genruntimeconfig.cache
+C:\Users\Windows10\Desktop\FAKS\Sistemi Baze Podataka\FashionWeek-main\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\ref\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\appsettings.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.FileFormats.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.staticwebassets.runtime.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.exe
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.deps.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.runtimeconfig.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\MudBlazor.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\bin\Debug\net8.0\KulinariumUI.Client.pdb
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.AssemblyReference.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfoInputs.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.AssemblyInfo.cs
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.csproj.CoreCompileInputs.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.RazorAssemblyInfo.cs
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.sourcelink.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.KulinariumUI.Host.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.build.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KulinariumUI.Host.props
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\scopedcss\bundle\KulinariumUI.Host.styles.css
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\Kulinari.9FB3B341.Up2Date
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\refint\KulinariumUI.Host.dll
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.pdb
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\KulinariumUI.Host.genruntimeconfig.cache
+C:\Users\Windows10\Desktop\GitHub\FashionWeek\KulinariumUI\KulinariumUI\Server\obj\Debug\net8.0\ref\KulinariumUI.Host.dll

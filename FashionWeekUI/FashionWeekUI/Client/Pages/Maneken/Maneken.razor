@@ -1,0 +1,360 @@
+﻿@page "/Maneken"
+
+@using System.Net.Http.Json
+@inject NavigationManager manager;
+@inject HttpClient Http;
+@inject ISnackbar Snackbar;
+@using System.Text;
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+
+<MudContainer Height="100%" Width="100%">
+    <MudSimpleTable Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+        <thead>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Boja Kose</th>
+                <th>Zemlja Porekla</th>
+                <th>MBR</th>
+                <th>Visina</th>
+                <th>Pol</th>
+                <th>Datum Rodjenja</th>
+                <th>Boja Ociju</th>
+                <th>Tezina</th>
+                <th>Konfekcijski Broj</th>
+                <th>Izaberi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (manekeni == null)
+            {
+                <tr>
+                    <td colspan="12">Loading...</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var maneken in manekeni)
+                {
+                    <tr>
+                        <td>@maneken.Ime</td>
+                        <td>@maneken.Prezime</td>
+                        <td>@maneken.BojaKose</td>
+                        <td>@maneken.ZemljaPorekla</td>
+                        <td>@maneken.Mbr</td>
+                        <td>@maneken.Visina</td>
+                        <td>@maneken.Pol</td>
+                        <td>@maneken.DatumRodjenja.ToString("yyyy-MM-dd")</td>
+                        <td>@maneken.BojaOciju</td>
+                        <td>@maneken.Tezina</td>
+                        <td>@maneken.KonfekcijskiBroj</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectManeken(maneken.Mbr)">
+                                Izaberi
+                            </MudButton>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </MudSimpleTable>
+    <div class="d-flex gap-2 mt-2 mr-2">
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="@DodajManekena">DODAJ MANEKENA</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="@ObrisiManekena" Color="Color.Error">OBRISI MANEKENA</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="@IzmeniManekena" Color="Color.Info" Size="Size.Small">IZMENI MANEKENA</MudButton>
+    </div>
+    <div class="d-flex gap-2 mt-2">
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Visibility" OnClick="() => PrikaziCasopise()" Color="Color.Info" Size="Size.Small">Prikazi Casopise</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Visibility" OnClick="() => ToggleRevijeFields()" Color="Color.Info" Size="Size.Small">Prikazi Revije</MudButton>
+        
+    </div>
+    <div class="d-flex gap-2 mt-2">
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" OnClick="() => ToggleFormaDodaj()" Color="Color.Info" Size="Size.Small">Dodaj Casopis</MudButton>
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="() => ToggleFormaObrisi()" Color="Color.Info" Size="Size.Small">Obrisi Casopis</MudButton>
+    </div>
+    @if (casopisi != null && casopisi.Any())
+    {
+        <MudSimpleTable Class="mt-8" Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    <th>Naziv</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var naziv in casopisi)
+                {
+                    <tr>
+                        <td>@naziv</td>
+                    </tr>
+                }
+            </tbody>
+            
+        </MudSimpleTable>
+    }
+    @if (showFormaDodaj)
+    {
+        <div class="mt-4">
+            <MudPaper Elevation="3">
+                <MudCardContent>
+                    <h3>Unos casopisa</h3>
+                    
+                    <MudTextField @bind-Value="@nazivCasopisa" Label="Naziv casopisa" />
+                    <MudButton Variant="Variant.Filled" OnClick="DodajCasopis" Class="mt-4" Color="Color.Primary">Dodaj</MudButton>
+                </MudCardContent>
+            </MudPaper>
+        </div>
+    }
+    @if (showFormaObrisi)
+    {
+        <div class="mt-4">
+            <MudPaper Elevation="3">
+                <MudCardContent>
+                    <h3>Brisanje casopisa</h3>
+
+                    <MudTextField @bind-Value="@nazivCasopisa" Label="Naziv casopisa" />
+                    <MudButton Variant="Variant.Filled" OnClick="ObrisiCasopis" Class="mt-4" Color="Color.Primary">Obrisi</MudButton>
+                </MudCardContent>
+            </MudPaper>
+        </div>
+    }
+
+    @if (showRevijaFields)
+    {
+        <MudSimpleTable Class="mt-8" Dense="true" Hover="true" Bordered="false" Striped="true" Style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    <th>Id Modne Revije</th>
+                    <th>Redni Broj</th>
+                    <th>Naziv</th>
+                    <th>Grad</th>
+                    <th>Datum Održavanja</th>
+                    <th>Vreme Održavanja</th>
+                    <th>Ime Javne Ličnosti</th>
+                    <th>Prezime Javne Ličnosti</th>
+                    <th>Zanimanje JL</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var revija in revije)
+                {
+                    <tr>
+                        <td>@revija.IdModneRevije</td>
+                        <td>@revija.RedniBroj</td>
+                        <td>@revija.Naziv</td>
+                        <td>@revija.Grad</td>
+                        <td>@revija.DatumOdrzavanja.ToShortDateString()</td>
+                        <td>@revija.VremeOdrzavanja.ToString()h</td>
+
+                        <td>@revija.ImeJavneLicnosti</td>
+                        <td>@revija.PrezimeJavneLicnosti</td>
+                        <td>@revija.ZanimanjeJL</td>
+                        <td>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => PoveziRevijuIManekena(revija.IdModneRevije)">
+                                POVEZI
+                            </MudButton>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </MudSimpleTable>
+    }
+    
+</MudContainer>
+
+@code {
+    public string maticniBroj { get; set; }
+    private List<ManekenModel>? manekeni;
+    private List<string>? casopisi;
+    private List<ModnaRevijaModel>? revije;
+    
+    private bool showRevijaFields = false;
+    
+    public string nazivCasopisa { get; set; }
+
+    private bool showFormaDodaj = false;
+    private bool showFormaObrisi = false;
+    private void ToggleFormaDodaj()
+    {
+        showFormaDodaj = !showFormaDodaj;
+        if (showFormaDodaj) showFormaObrisi = false;
+    }
+
+    private void ToggleFormaObrisi()
+    {
+        showFormaObrisi = !showFormaObrisi;
+        if (showFormaObrisi) showFormaDodaj = false;
+    }
+
+    private void ToggleRevijeFields()
+    {
+        showRevijaFields = !showRevijaFields;
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        manekeni = await Http.GetFromJsonAsync<List<ManekenModel>>("https://localhost:7234/Maneken/PreuzmiManekene");
+        revije = await Http.GetFromJsonAsync<List<ModnaRevijaModel>>("https://localhost:7234/ModnaRevija/PreuzmiModneRevije");
+        
+    }
+
+    public void DodajManekena()
+    {
+        manager.NavigateTo("/DodajManekena");
+    }
+
+    public void IzmeniManekena()
+    {
+        manager.NavigateTo($"/IzmeniManekena{maticniBroj}");
+    }
+
+    public async Task ObrisiManekena()
+    {
+        if (string.IsNullOrEmpty(maticniBroj))
+        {
+            Snackbar.Add("Niste izabrali manekena za brisanje!", Severity.Error);
+            return;
+        }
+
+        var response = await Http.DeleteAsync($"https://localhost:7234/Maneken/ObrisiManekena/{maticniBroj}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            manekeni = await Http.GetFromJsonAsync<List<ManekenModel>>("https://localhost:7234/Maneken/PreuzmiManekene");
+            Snackbar.Add("Maneken je obrisan!", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo brisanje manekena", Severity.Error);
+        }
+    }
+
+    private void SelectManeken(string mbr)
+    {
+        maticniBroj = mbr;
+        Snackbar.Add($"Izabrali ste manekena sa MBR: {mbr}", Severity.Success);
+    }
+
+    async Task PrikaziCasopise()
+    {
+        if (string.IsNullOrEmpty(maticniBroj))
+        {
+            Snackbar.Add("Izaberite manekena", Severity.Error);
+            return;
+        }
+
+        HttpResponseMessage response = await Http.GetAsync($"https://localhost:7234/Maneken/PreuzmiCasopiseManekena/{maticniBroj}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            string responseString = await response.Content.ReadAsStringAsync();
+            casopisi = JsonSerializer.Deserialize<List<string>>(responseString, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            if (casopisi.Count == 0)
+            {
+                Snackbar.Add("Nema časopisa za ovog manekena", Severity.Info);
+            }
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dobavljanje časopisa", Severity.Error);
+        }
+    }
+
+
+
+    async Task PoveziRevijuIManekena(int revijaId)
+    {
+        if (string.IsNullOrEmpty(maticniBroj))
+        {
+            Snackbar.Add("Izaberite manekena", Severity.Error);
+            return;
+        }
+
+        var response = await Http.PostAsync($"https://localhost:7234/Maneken/PoveziManekena/{maticniBroj}/{revijaId}", null);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Revija je uspešno povezana sa manekenom!", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo povezivanje revije", Severity.Error);
+        }
+    }
+    
+
+    public class CasopisModel
+    {
+        public string Naziv { get; set; }
+    }
+
+    public class RevijaModel
+    {
+        public int Id { get; set; }
+        public string Naziv { get; set; }
+        public DateTime Datum { get; set; }
+        public string Lokacija { get; set; }
+    }
+
+
+
+    public async Task DodajCasopis()
+    {
+
+        if(nazivCasopisa == null)
+        {
+            Snackbar.Add("Unesite naziv casopisa", Severity.Error);
+            return;
+        }
+        else if(maticniBroj == null)
+        {
+            Snackbar.Add("Izaberite manekena", Severity.Error);
+        }
+
+
+        var response = await Http.PostAsync($"https://localhost:7234/Maneken/DodajCasopiseManekenu/{maticniBroj}/{nazivCasopisa}", null);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Casopis je uspesno dodat!", Severity.Success);
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje casopisa", Severity.Error);
+        }
+
+
+    }
+
+    public async Task ObrisiCasopis()
+    {
+        if(nazivCasopisa == null)
+		{
+			Snackbar.Add("Unesite naziv casopisa", Severity.Error);
+			return;
+		}
+		else if(maticniBroj == null)
+		{
+			Snackbar.Add("Izaberite manekena", Severity.Error);
+		}
+
+        var response = await Http.DeleteAsync($"https://localhost:7234/Maneken/ObrisiCasopisManekena/{maticniBroj}/{nazivCasopisa}");
+        
+        if(response.IsSuccessStatusCode)
+        		{
+			Snackbar.Add("Casopis je uspesno obrisan!", Severity.Success);
+		}
+		else
+		{
+			Snackbar.Add("Neuspelo brisanje casopisa", Severity.Error);
+		}
+
+    }
+
+
+
+
+}

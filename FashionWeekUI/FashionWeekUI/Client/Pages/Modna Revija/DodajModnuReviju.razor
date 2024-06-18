@@ -1,0 +1,222 @@
+﻿@page "/DodajModnuReviju"
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+
+<MudContainer>
+    <MudGrid>
+        <!-- Form for adding a new fashion show -->
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="RedniBroj" Label="Redni Broj" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Naziv" Label="Naziv" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="Grad" Label="Grad" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="DatumOdrzavanja" Label="Datum Održavanja" Variant="Variant.Text" Type="date"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="VremeOdrzavanja" Label="Vreme Održavanja" Variant="Variant.Text" Type="number"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ImeJavneLicnosti" Label="Ime Javne Ličnosti" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="PrezimeJavneLicnosti" Label="Prezime Javne Ličnosti" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudTextField @bind-Value="ZanimanjeJL" Label="Zanimanje Javne Ličnosti" Variant="Variant.Text"></MudTextField>
+        </MudItem>
+
+        <!-- Show/Hide the designer table and text field -->
+        @if (showOrganizerFields)
+        {
+            <MudItem xs="12" sm="6" md="4">
+                <MudTextField @bind-Value="OrganizatorID" Label="Organizator ID" Variant="Variant.Text" Disabled="true"></MudTextField>
+            </MudItem>
+
+            <MudItem xs="12">
+                <MudTable Items="@organizatori" Hover="true">
+                    <HeaderContent>
+                        <MudTh>Organizator ID</MudTh>
+                        <MudTh>Kolekcija</MudTh>
+                        <MudTh>Prva Modna Revija</MudTh>
+                        <MudTh>Akcija</MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Organizator ID">@context.OrganizatorID</MudTd>
+                        <MudTd DataLabel="Kolekcija">@context.Kolekcija</MudTd>
+                        <MudTd DataLabel="Prva Modna Revija">@context.PrvaModnaRevija</MudTd>
+                        <MudTd>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="() => SelectOrganizator(context.OrganizatorID)">
+                                Izaberi
+                            </MudButton>
+                        </MudTd>
+                    </RowTemplate>
+                </MudTable>
+            </MudItem>
+        }
+
+        <MudItem xs="12" sm="6" md="4">
+            @if (!showOrganizerFields)
+            {
+                <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => DodajReviju()" FullWidth="true">DODAJ MODNU REVIJU</MudButton>
+                <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => ToggleOrganizerFields()" FullWidth="true">PRIKAŽI ORGANIZATORE</MudButton>
+            }
+            else
+            {
+                <MudContainer MaxWidth="MaxWidth.Large">
+                    <MudGrid>
+                        <!-- Dugme za dodavanje modne kuće sa organizatorom -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => DodajModnuRevijuSaOrganizatorom()" FullWidth="true">DODAJ MODNU REVIJU SA ORGANIZATOROM</MudButton>
+                        </MudItem>
+
+                        <!-- Dugme za povratak -->
+                        <MudItem xs="6">
+                            <MudButton Variant="Variant.Filled" Class="ma-6" Color="Color.Primary" OnClick="() => ToggleOrganizerFields()" FullWidth="true">NAZAD</MudButton>
+                        </MudItem>
+                    </MudGrid>
+                </MudContainer>
+
+            }
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    public int RedniBroj { get; set; }
+    public string Naziv { get; set; }
+    public string Grad { get; set; }
+    public DateTime DatumOdrzavanja { get; set; }
+    public int VremeOdrzavanja { get; set; }
+    public string ImeJavneLicnosti { get; set; }
+    public string PrezimeJavneLicnosti { get; set; }
+    public string ZanimanjeJL { get; set; }
+    public int OrganizatorID { get; set; }
+    private bool showOrganizerFields = false;
+
+    private void ToggleOrganizerFields()
+    {
+        showOrganizerFields = !showOrganizerFields;
+    }
+
+    private List<OrganizatorModel> organizatori;
+
+    protected override async Task OnInitializedAsync()
+    {
+        organizatori = await Http.GetFromJsonAsync<List<OrganizatorModel>>("https://localhost:7234/Organizator/PreuzmiOrganizatore");
+    }
+
+    private void SelectOrganizator(int id)
+    {
+        OrganizatorID = id;
+    }
+
+    public async Task DodajReviju()
+    {
+
+        var modneRevije = await Http.GetFromJsonAsync<List<ModnaRevijaModel>>("https://localhost:7234/ModnaRevija/PreuzmiModneRevije");
+
+        foreach(ModnaRevijaModel m in modneRevije)
+        {
+            if(m.RedniBroj == RedniBroj)
+            {
+                Snackbar.Add("Modna revija sa unetim rednim brojem već postoji!", Severity.Error);
+                return;
+            }
+            else if(m.VremeOdrzavanja > 24 && m.VremeOdrzavanja < 0)
+			{
+				Snackbar.Add("Vreme održavanja mora biti između 0 i 24!", Severity.Error);
+				return;
+			}
+        }
+
+        var novaRevija = new ModnaRevijaModel
+        {
+            RedniBroj = RedniBroj,
+            Naziv = Naziv,
+            Grad = Grad,
+            DatumOdrzavanja = DatumOdrzavanja,
+            VremeOdrzavanja = VremeOdrzavanja,
+            ImeJavneLicnosti = ImeJavneLicnosti,
+            PrezimeJavneLicnosti = PrezimeJavneLicnosti,
+            ZanimanjeJL = ZanimanjeJL,
+        };
+
+        var response = await Http.PostAsJsonAsync("https://localhost:7234/ModnaRevija/DodajModnuReviju", novaRevija);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modna revija je dodana!", Severity.Success);
+            Navigation.NavigateTo("/ModnaRevija");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje modne revije", Severity.Error);
+        }
+    }
+
+    public async Task DodajModnuRevijuSaOrganizatorom()
+    {
+        var modneRevije = await Http.GetFromJsonAsync<List<ModnaRevijaModel>>("https://localhost:7234/ModnaRevija/PreuzmiModneRevije");
+
+        foreach (ModnaRevijaModel m in modneRevije)
+        {
+            if (m.RedniBroj == RedniBroj)
+            {
+                Snackbar.Add("Modna revija sa unetim rednim brojem već postoji!", Severity.Error);
+                return;
+            }
+            else if (m.VremeOdrzavanja > 24 && m.VremeOdrzavanja < 0)
+            {
+                Snackbar.Add("Vreme održavanja mora biti između 0 i 24!", Severity.Error);
+                return;
+            }
+        }
+
+        var novaRevija = new ModnaRevijaModel
+        {
+            RedniBroj = RedniBroj,
+            Naziv = Naziv,
+            Grad = Grad,
+            DatumOdrzavanja = DatumOdrzavanja,
+            VremeOdrzavanja = VremeOdrzavanja,
+            ImeJavneLicnosti = ImeJavneLicnosti,
+            PrezimeJavneLicnosti = PrezimeJavneLicnosti,
+            ZanimanjeJL = ZanimanjeJL,
+        };
+
+
+        OrganizatorID = OrganizatorID == 0 ? 0 : OrganizatorID;
+
+
+        var response = await Http.PostAsJsonAsync($"https://localhost:7234/ModnaRevija/DodajModnuRevijuSaOrganizatorom/{OrganizatorID}", novaRevija);
+
+
+        if (response.IsSuccessStatusCode)
+        {
+            Snackbar.Add("Modna revija je dodana!", Severity.Success);
+            Navigation.NavigateTo("/ModnaRevija");
+        }
+        else
+        {
+            Snackbar.Add("Neuspelo dodavanje modne revije", Severity.Error);
+        }
+    }
+
+    public class ModnaRevijaRequestModel
+    {
+        public ModnaRevijaModel ModnaRevija { get; set; }
+        public int OrganizatorID { get; set; }
+    }
+
+   
+
+   
+    }
+    
